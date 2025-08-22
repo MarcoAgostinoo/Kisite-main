@@ -1,0 +1,39 @@
+  =>  Template Name    : Builderz - Construction Company Website Template
+
+  =>  Template Link    : https://htmlcodex.com/construction-company-website-template
+
+  =>  Template License : https://htmlcodex.com/license (or read the LICENSE.txt file)
+
+  =>  Template Author  : HTML Codex
+
+  =>  Author Website   : https://htmlcodex.com
+
+  =>  About HTML Codex : HTML Codex is one of the top creators and publishers of Free HTML templates, HTML landing pages, HTML email templates and HTML snippets in the world. Read more at ( https://htmlcodex.com/about-us )
+
+  Paleta de Cores para seu projeto (Empresa de Criação de Sites)
+
+Azul Escuro (Principal – Tecnologia & Confiança): #152034
+
+Azul Claro (Secundária – Modernidade & Inovação): #152034
+
+Dourado (Destaques/Chamada para Ação – Sucesso): #F59E0B
+
+Cinza Claro (Fundo Neutro – Equilíbrio): #F3F4F6
+
+Cinza Médio (Texto Secundário – Leitura Suave): #6B7280
+
+Branco (Base – Limpeza e Profissionalismo): #FFFFFF
+
+📌 Sugestão de aplicação prática:
+
+Background principal: Cinza Claro #F3F4F6 ou Branco #FFFFFF
+
+Navbar/Header: Azul Escuro #152034
+
+Links/Botões principais: Azul Claro #152034
+
+Botões de destaque/CTA (ex: "Contratar agora"): Dourado #F59E0B
+
+Textos principais: Preto ou Azul Escuro
+
+Textos secundários/legendas: Cinza Médio #6B7280
