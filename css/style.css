@@ -37,7 +37,7 @@ a:focus {
 .wrapper {
   position: relative;
   width: 100%;
-  max-width: 1366px;
+  max-width: 100%;
   margin: 0 auto;
   background: #ffffff;
 }
@@ -84,19 +84,20 @@ a:focus {
   padding: 15px 0;
   text-align: left;
   overflow: hidden;
+  box-shadow: #000000;
 }
 
 .top-bar .logo h1 {
   margin: 0;
   color: #0c183a;
-  font-size: 60px;
+  font-size: 90px;
   line-height: 60px;
   font-weight: 700;
 }
 
 .top-bar .logo img {
   max-width: 100%;
-  max-height: 60px;
+  max-height: 70px;
 }
 
 .top-bar .top-bar-item {
@@ -467,10 +468,10 @@ a:focus {
 }
 
 .section-header p {
-  color: #ffd900;
-  text-shadow: #000000e6 1px 1px 2px;
-  font-size: 20fpx;
-  font-weight: 600;
+  color: #ffd700;
+  text-shadow: #000000 1px 1px 1px;
+  font-size: 20px;
+  font-weight: 800;
   margin-bottom: 5px;
 }
 
@@ -587,7 +588,7 @@ a:focus {
 .about {
   position: relative;
   width: 100%;
-  padding: 45px 0;
+  padding: 15px 0;
 }
 
 .about .section-header {

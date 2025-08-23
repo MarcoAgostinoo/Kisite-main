@@ -58,8 +58,7 @@
             <div class="col-lg-4 col-md-12">
               <div class="logo">
                 <a href="index.html">
-                  <h1>KiSite</h1>
-                  <!-- <img src="img/logo.jpg" alt="Logo"> -->
+                  <img src="img/logo.png" alt="" />
                 </a>
               </div>
             </div>
@@ -132,15 +131,15 @@
                     href="#"
                     class="nav-link dropdown-toggle"
                     data-toggle="dropdown"
-                    >Serviços</a
+                    >Páginas</a
                   >
                   <div class="dropdown-menu">
-                    <a href="blog.html" class="dropdown-item">Blog</a>
+                    <a href="blog.html" class="dropdown-item">Páginas</a>
                     <a href="single.html" class="dropdown-item">Página</a>
                   </div>
                 </div>
                 <a href="portfolio.html" class="nav-item nav-link">Preços</a>
-                <a href="service.html" class="nav-item nav-link">Blog</a>
+                <a href="blog.html" class="nav-item nav-link">Blog</a>
                 <a href="contact.html" class="nav-item nav-link">Contato</a>
               </div>
               <div class="ml-auto">
@@ -307,7 +306,7 @@
             <div class="col-lg-5 col-md-6">
               <div class="about-img">
                 <img
-                  src="img/team-4.jpg"
+                  src="img/imgHerosecondary.png"
                   alt="Fundador da KiSite - Especialista em desenvolvimento web"
                 />
               </div>
@@ -567,6 +566,171 @@
       </div>
       <!-- Service End -->
 
+      <!-- Início do componente de galeria isolado (não tocar em outros estilos) -->
+      <section class="ksg-root" aria-label="Galeria KiSite">
+        <header class="ksg-topbar">
+          <div class="section-header text-center">
+            <p>Conheça nosso trabalho</p>
+            <h2>Galeria de Projetos Recentes</h2>
+          </div>
+        </header>
+        <div id="ksg-gallery" class="ksg-gallery-grid" role="list">
+          <!-- Projetos da galeria -->
+          <figure
+            class="ksg-card"
+            tabindex="0"
+            data-ksg-index="0"
+            data-ksg-title="Garagem Oficina"
+            data-ksg-desc="Plataforma completa para divulgação de serviços automotivos e exibição de portfólio, com foco em SEO e experiência do usuário responsiva."
+          >
+            <img
+              loading="lazy"
+              src="img/portfolio-1.jpg"
+              alt="Garagem Oficina - Oficina Automotiva"
+            />
+            <figcaption>
+              <h3>Garagem Oficina</h3>
+              <p>Oficina Automotiva</p>
+              <a href="#" class="ksg-btn">Ver Detalhes do Projeto</a>
+            </figcaption>
+          </figure>
+          <figure
+            class="ksg-card"
+            tabindex="0"
+            data-ksg-index="1"
+            data-ksg-title="Concursos Agora"
+            data-ksg-desc="Portal de notícias e cursos atualizado para concursos públicos, oferecendo conteúdo relevante e facilidade de navegação."
+          >
+            <img
+              loading="lazy"
+              src="img/portfolio-2.jpg"
+              alt="Concursos Agora - Portal de Concursos"
+            />
+            <figcaption>
+              <h3>Concursos Agora</h3>
+              <p>Portal de Concursos</p>
+              <a href="#" class="ksg-btn">Ver Detalhes do Projeto</a>
+            </figcaption>
+          </figure>
+          <figure
+            class="ksg-card"
+            tabindex="0"
+            data-ksg-index="2"
+            data-ksg-title="Delícias da Deda"
+            data-ksg-desc="Plataforma visualmente atraente para divulgação de serviços de confeitaria e portfólio de doces, com integração de redes sociais."
+          >
+            <img
+              loading="lazy"
+              src="img/portfolio-3.jpg"
+              alt="Delícias da Deda - Confeitaria Artesanal"
+            />
+            <figcaption>
+              <h3>Delícias da Deda</h3>
+              <p>Confeitaria Artesanal</p>
+              <a href="#" class="ksg-btn">Ver Detalhes do Projeto</a>
+            </figcaption>
+          </figure>
+          <figure
+            class="ksg-card"
+            tabindex="0"
+            data-ksg-index="3"
+            data-ksg-title="Site para LcCopper"
+            data-ksg-desc="Projeto voltado para a divulgação estratégica de serviços e produtos da LcCopper, com foco em conversão e presença online profissional."
+          >
+            <img
+              loading="lazy"
+              src="img/portfolio-4.jpg"
+              alt="Site para LcCopper"
+            />
+            <figcaption>
+              <h3>Site para LcCopper</h3>
+              <p>LcCopper</p>
+              <a href="#" class="ksg-btn">Ver Detalhes do Projeto</a>
+            </figcaption>
+          </figure>
+          <figure
+            class="ksg-card"
+            tabindex="0"
+            data-ksg-index="5"
+            data-ksg-title="Portifolio Pessoal"
+            data-ksg-desc="Projeto voltado para a divulgação estratégica de portifolio pessoal, para divulgação de projetos e habilidades."
+          >
+            <img
+              loading="lazy"
+              src="img/portfolio-4.jpg"
+              alt="Portifolio Pessoal - Portifolio Profissional"
+            />
+            <figcaption>
+              <h3>Portifolio Pessoal</h3>
+              <p>Portifolio Profissional</p>
+              <a href="#" class="ksg-btn">Ver Detalhes do Projeto</a>
+            </figcaption>
+          </figure>
+        </div>
+        <!-- Modal / Lightbox (isolado) -->
+        <div
+          id="ksg-lightbox"
+          class="ksg-lightbox"
+          aria-hidden="true"
+          role="dialog"
+          aria-modal="true"
+        >
+          <div class="ksg-lb-backdrop" data-ksg-close="true"></div>
+          <div
+            class="ksg-lb-panel"
+            role="document"
+            aria-labelledby="ksg-lb-title"
+          >
+            <button class="ksg-lb-close" aria-label="Fechar (Esc)">
+              &times;
+            </button>
+            <div class="ksg-lb-content" tabindex="-1">
+              <button
+                class="ksg-lb-nav ksg-lb-prev"
+                aria-label="Anterior"
+                title="Anterior"
+              >
+                &#10094;
+              </button>
+              <div class="ksg-lb-media">
+                <img src="" alt="" id="ksg-lb-image" />
+                <div class="ksg-lb-info">
+                  <h3 id="ksg-lb-title"></h3>
+                  <p id="ksg-lb-desc"></p>
+                  <p class="ksg-lb-meta" id="ksg-lb-meta"></p>
+                  <div class="ksg-lb-actions">
+                    <a
+                      id="ksg-lb-download"
+                      class="ksg-btn"
+                      download
+                      target="_blank"
+                      rel="noopener"
+                      >Baixar</a
+                    >
+                    <button id="ksg-lb-fullscreen" class="ksg-btn">
+                      Tela cheia
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="ksg-lb-nav ksg-lb-next"
+                aria-label="Próximo"
+                title="Próximo"
+              >
+                &#10095;
+              </button>
+            </div>
+            <div
+              class="ksg-lb-thumbs"
+              id="ksg-lb-thumbs"
+              aria-hidden="false"
+            ></div>
+          </div>
+        </div>
+      </section>
+      <!-- Fim do componente de galeria isolado -->
+
       <!-- Seção de Preços Início -->
       <div id="precos" class="pricing-section">
         <div class="container">
@@ -586,7 +750,7 @@
                   </p>
                 </div>
                 <div class="pricing-price">
-                  <h2><sup>a partir de R$</sup>609</h2>
+                  <h2><sup>a partir de R$</sup>690</h2>
                   <span>+ R$ 99/mês (hospedagem e suporte)</span>
                 </div>
                 <div class="pricing-features">
@@ -681,7 +845,7 @@
                 </div>
                 <div class="pricing-price">
                   <h2>Sob Orçamento</h2>
-                  <span style="margin-top: 10px">Pagamento Único</span>
+                  <span style="margin-top: 14px">Pagamento Único</span>
                 </div>
                 <div class="pricing-features">
                   <ul>
@@ -739,7 +903,7 @@
             <div class="section-header text-center">
               <p>Veja em Ação</p>
               <h2>Mais que um Site, um Parceiro para o seu Sucesso</h2>
-              <p class="video-subtitle  video-text">
+              <p class="video-subtitle video-text">
                 Aperte o play e descubra como nossa paixão por tecnologia pode
                 impulsionar o crescimento do seu negócio.
               </p>
@@ -906,171 +1070,6 @@
           </div>
         </div> -->
       <!-- Team End -->
-
-      <!-- Início do componente de galeria isolado (não tocar em outros estilos) -->
-      <section class="ksg-root" aria-label="Galeria KiSite">
-        <header class="ksg-topbar">
-          <div class="section-header text-center">
-            <p>Conheça nosso trabalho</p>
-            <h2>Galeria de Projetos Recentes</h2>
-          </div>
-        </header>
-        <div id="ksg-gallery" class="ksg-gallery-grid" role="list">
-          <!-- Projetos da galeria -->
-          <figure
-            class="ksg-card"
-            tabindex="0"
-            data-ksg-index="0"
-            data-ksg-title="Garagem Oficina"
-            data-ksg-desc="Plataforma completa para divulgação de serviços automotivos e exibição de portfólio, com foco em SEO e experiência do usuário responsiva."
-          >
-            <img
-              loading="lazy"
-              src="img/portfolio-1.jpg"
-              alt="Garagem Oficina - Oficina Automotiva"
-            />
-            <figcaption>
-              <h3>Garagem Oficina</h3>
-              <p>Oficina Automotiva</p>
-              <a href="#" class="ksg-btn">Ver Detalhes do Projeto</a>
-            </figcaption>
-          </figure>
-          <figure
-            class="ksg-card"
-            tabindex="0"
-            data-ksg-index="1"
-            data-ksg-title="Concursos Agora"
-            data-ksg-desc="Portal de notícias e cursos atualizado para concursos públicos, oferecendo conteúdo relevante e facilidade de navegação."
-          >
-            <img
-              loading="lazy"
-              src="img/portfolio-2.jpg"
-              alt="Concursos Agora - Portal de Concursos"
-            />
-            <figcaption>
-              <h3>Concursos Agora</h3>
-              <p>Portal de Concursos</p>
-              <a href="#" class="ksg-btn">Ver Detalhes do Projeto</a>
-            </figcaption>
-          </figure>
-          <figure
-            class="ksg-card"
-            tabindex="0"
-            data-ksg-index="2"
-            data-ksg-title="Delícias da Deda"
-            data-ksg-desc="Plataforma visualmente atraente para divulgação de serviços de confeitaria e portfólio de doces, com integração de redes sociais."
-          >
-            <img
-              loading="lazy"
-              src="img/portfolio-3.jpg"
-              alt="Delícias da Deda - Confeitaria Artesanal"
-            />
-            <figcaption>
-              <h3>Delícias da Deda</h3>
-              <p>Confeitaria Artesanal</p>
-              <a href="#" class="ksg-btn">Ver Detalhes do Projeto</a>
-            </figcaption>
-          </figure>
-          <figure
-            class="ksg-card"
-            tabindex="0"
-            data-ksg-index="3"
-            data-ksg-title="Site para LcCopper"
-            data-ksg-desc="Projeto voltado para a divulgação estratégica de serviços e produtos da LcCopper, com foco em conversão e presença online profissional."
-          >
-            <img
-              loading="lazy"
-              src="img/portfolio-4.jpg"
-              alt="Site para LcCopper"
-            />
-            <figcaption>
-              <h3>Site para LcCopper</h3>
-              <p>LcCopper</p>
-              <a href="#" class="ksg-btn">Ver Detalhes do Projeto</a>
-            </figcaption>
-          </figure>
-          <figure
-            class="ksg-card"
-            tabindex="0"
-            data-ksg-index="5"
-            data-ksg-title="Portifolio Pessoal"
-            data-ksg-desc="Projeto voltado para a divulgação estratégica de portifolio pessoal, para divulgação de projetos e habilidades."
-          >
-            <img
-              loading="lazy"
-              src="img/portfolio-4.jpg"
-              alt="Portifolio Pessoal - Portifolio Profissional"
-            />
-            <figcaption>
-              <h3>Portifolio Pessoal</h3>
-              <p>Portifolio Profissional</p>
-              <a href="#" class="ksg-btn">Ver Detalhes do Projeto</a>
-            </figcaption>
-          </figure>
-        </div>
-        <!-- Modal / Lightbox (isolado) -->
-        <div
-          id="ksg-lightbox"
-          class="ksg-lightbox"
-          aria-hidden="true"
-          role="dialog"
-          aria-modal="true"
-        >
-          <div class="ksg-lb-backdrop" data-ksg-close="true"></div>
-          <div
-            class="ksg-lb-panel"
-            role="document"
-            aria-labelledby="ksg-lb-title"
-          >
-            <button class="ksg-lb-close" aria-label="Fechar (Esc)">
-              &times;
-            </button>
-            <div class="ksg-lb-content" tabindex="-1">
-              <button
-                class="ksg-lb-nav ksg-lb-prev"
-                aria-label="Anterior"
-                title="Anterior"
-              >
-                &#10094;
-              </button>
-              <div class="ksg-lb-media">
-                <img src="" alt="" id="ksg-lb-image" />
-                <div class="ksg-lb-info">
-                  <h3 id="ksg-lb-title"></h3>
-                  <p id="ksg-lb-desc"></p>
-                  <p class="ksg-lb-meta" id="ksg-lb-meta"></p>
-                  <div class="ksg-lb-actions">
-                    <a
-                      id="ksg-lb-download"
-                      class="ksg-btn"
-                      download
-                      target="_blank"
-                      rel="noopener"
-                      >Baixar</a
-                    >
-                    <button id="ksg-lb-fullscreen" class="ksg-btn">
-                      Tela cheia
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <button
-                class="ksg-lb-nav ksg-lb-next"
-                aria-label="Próximo"
-                title="Próximo"
-              >
-                &#10095;
-              </button>
-            </div>
-            <div
-              class="ksg-lb-thumbs"
-              id="ksg-lb-thumbs"
-              aria-hidden="false"
-            ></div>
-          </div>
-        </div>
-      </section>
-      <!-- Fim do componente de galeria isolado -->
 
       <!-- Script Faq -->
       <script>
@@ -1405,6 +1404,7 @@
         </div>
       </div>
       <!-- Testimonial End -->
+       
       <!-- Footer Start -->
       <div class="footer wow fadeIn" data-wow-delay="0.3s">
         <div class="container">
