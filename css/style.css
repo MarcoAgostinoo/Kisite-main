@@ -2728,7 +2728,9 @@ a:focus {
   font-size: 15px;
   color: #d1d5db;
 }
-
+.cta-text-img {
+  max-height: 120px;
+}
 /* Botão do card popular */
 .pricing-card.popular .btn {
   color: #ffffff;
@@ -2792,3 +2794,6 @@ a:focus {
         transform: scale(1.1);
         color: #fff;
       }
+
+
+      
