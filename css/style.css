@@ -1247,6 +1247,7 @@ a:focus {
 
 .blog .blog-img img {
   width: 100%;
+  max-height: 220px;
 }
 
 .blog .blog-title {
@@ -1366,6 +1367,10 @@ a:focus {
 .single .single-content img {
   margin-bottom: 20px;
   width: 100%;
+}
+.single-content img {
+  border-radius: 8px;
+  max-height: 500px;
 }
 
 .single .single-tags {
@@ -2755,3 +2760,35 @@ a:focus {
   color: #152034;
   font-weight: 600;
 }
+
+
+  /* Ensure cards are initially hidden for animation */
+      .card,
+      .contact-section {
+        opacity: 0;
+      }
+
+      /* Estilo para o botão flutuante do WhatsApp */
+      .whatsapp-float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 65px; /* Posição acima do botão 'back-to-top' */
+        right: 25px;
+        background-color: #25d366;
+        color: #fff;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease;
+      }
+
+      .whatsapp-float:hover {
+        transform: scale(1.1);
+        color: #fff;
+      }

@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="utf-8" />
-    <title>Builderz - Construction Company Website Template</title>
+    <title>Contato - KiSite</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="Construction Company Website Template" name="keywords" />
-    <meta content="Construction Company Website Template" name="description" />
+    <meta
+      content="Contato, Orçamento, KiSite, Criação de Sites"
+      name="keywords"
+    />
+    <meta
+      content="Entre em contato com a KiSite para solicitar um orçamento ou tirar suas dúvidas sobre nossos serviços de criação de sites."
+      name="description"
+    />
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon" />
@@ -34,6 +40,33 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+
+    <style>
+      /* Estilo para o botão flutuante do WhatsApp */
+      .whatsapp-float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 25px;
+        right: 25px;
+        background-color: #25d366;
+        color: #fff;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease;
+      }
+
+      .whatsapp-float:hover {
+        transform: scale(1.1);
+        color: #fff;
+      }
+    </style>
   </head>
 
   <body>
@@ -45,8 +78,7 @@
             <div class="col-lg-4 col-md-12">
               <div class="logo">
                 <a href="index.html">
-                  <img src="img/logo.png" alt="" />
-                  <!-- <img src="img/logo.jpg" alt="Logo"> -->
+                  <img src="img/logo.png" alt="Logo KiSite" />
                 </a>
               </div>
             </div>
@@ -59,7 +91,7 @@
                     </div>
                     <div class="top-bar-text">
                       <h3>Horário de Funcionamento</h3>
-                      <p>Seg - Sex, 8:00 - 9:00</p>
+                      <p>Seg - Sex, 11:00 - 19:00</p>
                     </div>
                   </div>
                 </div>
@@ -70,7 +102,7 @@
                     </div>
                     <div class="top-bar-text">
                       <h3>Ligue para</h3>
-                      <p>+11 91907 239</p>
+                      <p>+11 91907 2390</p>
                     </div>
                   </div>
                 </div>
@@ -111,30 +143,39 @@
               id="navbarCollapse"
             >
               <div class="navbar-nav mr-auto">
-                <a href="index.html" class="nav-item nav-link active">Início</a>
+                <a href="index.html" class="nav-item nav-link">Início</a>
                 <a href="about.html" class="nav-item nav-link">Sobre</a>
-                <a href="#portifolio" class="nav-item nav-link">Portifólio</a>
+                <a href="index.html#portifolio" class="nav-item nav-link"
+                  >Portifólio</a
+                >
                 <div class="nav-item dropdown">
                   <a
                     href="#"
                     class="nav-link dropdown-toggle"
                     data-toggle="dropdown"
-                    >Serviços</a
+                    >Páginas</a
                   >
                   <div class="dropdown-menu">
-                    <a href="blog.html" class="dropdown-item">Blog</a>
-                    <a href="site-sob-medida.html" class="dropdown-item">Site Sob Medida</a>
+                    <a href="site-expresso.html" class="dropdown-item"
+                      >Site Expresso</a
+                    >
+                    <a href="site-sob-medida.html" class="dropdown-item"
+                      >Site Sob Medida</a
+                    >
                   </div>
                 </div>
-                <a href="portfolio.html" class="nav-item nav-link">Preços</a>
-                <a href="service.html" class="nav-item nav-link">Blog</a>
-                <a href="contact.html" class="nav-item nav-link">Contato</a>
+                <a href="index.html#precos" class="nav-item nav-link">Preços</a>
+                <a href="blog.html" class="nav-item nav-link">Blog</a>
+                <a href="contact.html" class="nav-item nav-link active"
+                  >Contato</a
+                >
               </div>
               <div class="ml-auto">
                 <a
                   class="btn"
-                  href="https://htmlcodex.com/construction-company-html-template"
-                  >Baixar Versão Pro</a
+                  href="https://wa.me/5511919072390?text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
+                  target="_blank"
+                  >Entre em Contato pelo WhatsApp</a
                 >
               </div>
             </div>
@@ -148,11 +189,11 @@
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <h2>Contact Us</h2>
+              <h2>Fale Conosco</h2>
             </div>
             <div class="col-12">
-              <a href="">Home</a>
-              <a href="">Contact Us</a>
+              <a href="index.html">Início</a>
+              <a href="contact.html">Contato</a>
             </div>
           </div>
         </div>
@@ -163,8 +204,8 @@
       <div class="contact wow fadeInUp">
         <div class="container">
           <div class="section-header text-center">
-            <p>Get In Touch</p>
-            <h2>For Any Query</h2>
+            <p>Entre em Contato</p>
+            <h2>Estamos à sua disposição</h2>
           </div>
           <div class="row">
             <div class="col-md-6">
@@ -172,21 +213,21 @@
                 <div class="contact-item">
                   <i class="flaticon-address"></i>
                   <div class="contact-text">
-                    <h2>Location</h2>
+                    <h2>Endereço</h2>
                     <p>Rua: Jorge Tibiriça, SP, Brasil</p>
                   </div>
                 </div>
                 <div class="contact-item">
                   <i class="flaticon-call"></i>
                   <div class="contact-text">
-                    <h2>Phone</h2>
+                    <h2>Telefone</h2>
                     <p>11 91907 2390</p>
                   </div>
                 </div>
                 <div class="contact-item">
                   <i class="flaticon-send-mail"></i>
                   <div class="contact-text">
-                    <h2>Email</h2>
+                    <h2>E-mail</h2>
                     <p>comercial@kisite.com.br</p>
                   </div>
                 </div>
@@ -205,9 +246,9 @@
                       type="text"
                       class="form-control"
                       id="name"
-                      placeholder="Your Name"
+                      placeholder="Seu Nome"
                       required="required"
-                      data-validation-required-message="Please enter your name"
+                      data-validation-required-message="Por favor, digite seu nome."
                     />
                     <p class="help-block text-danger"></p>
                   </div>
@@ -216,9 +257,9 @@
                       type="email"
                       class="form-control"
                       id="email"
-                      placeholder="Your Email"
+                      placeholder="Seu E-mail"
                       required="required"
-                      data-validation-required-message="Please enter your email"
+                      data-validation-required-message="Por favor, digite seu e-mail."
                     />
                     <p class="help-block text-danger"></p>
                   </div>
@@ -227,9 +268,9 @@
                       type="text"
                       class="form-control"
                       id="subject"
-                      placeholder="Subject"
+                      placeholder="Assunto"
                       required="required"
-                      data-validation-required-message="Please enter a subject"
+                      data-validation-required-message="Por favor, digite um assunto."
                     />
                     <p class="help-block text-danger"></p>
                   </div>
@@ -237,15 +278,15 @@
                     <textarea
                       class="form-control"
                       id="message"
-                      placeholder="Message"
+                      placeholder="Sua Mensagem"
                       required="required"
-                      data-validation-required-message="Please enter your message"
+                      data-validation-required-message="Por favor, digite sua mensagem."
                     ></textarea>
                     <p class="help-block text-danger"></p>
                   </div>
                   <div>
                     <button class="btn" type="submit" id="sendMessageButton">
-                      Send Message
+                      Enviar Mensagem
                     </button>
                   </div>
                 </form>
@@ -281,20 +322,20 @@
             <div class="col-md-6 col-lg-3">
               <div class="footer-link">
                 <h2>Nossos Serviços</h2>
-                <a href="#servicos">Sites Institucionais</a>
-                <a href="#servicos">Lojas Virtuais</a>
-                <a href="#servicos">Landing Pages</a>
-                <a href="#servicos">Otimização SEO</a>
-                <a href="#servicos">Manutenção e Suporte</a>
+                <p>Sites Institucionais</p>
+                <p>Lojas Virtuais</p>
+                <p>Landing Pages</p>
+                <p>Otimização SEO</p>
+                <p>Manutenção e Suporte</p>
               </div>
             </div>
             <div class="col-md-6 col-lg-3">
               <div class="footer-link">
                 <h2>Páginas Úteis</h2>
                 <a href="about.html">Sobre</a>
-                <a href="team.html">Portifólio</a>
-                <a href="portfolio.html">Preços</a>
-                <a href="service.html">Blog</a>
+                <a href="index.html#portifolio">Portifólio</a>
+                <a href="index.html#precos">Preços</a>
+                <a href="blog.html">Blog</a>
                 <a href="contact.html">Contato</a>
               </div>
             </div>
@@ -315,10 +356,9 @@
         </div>
         <div class="container footer-menu">
           <div class="f-menu">
-            <a href="">Termos de uso</a>
-            <a href="">Política de Privacidade</a>
-            <a href="">Cookies</a>
-            <a href="#faq">Dúvidas Frequentes</a>
+            <a href="politica-de-privacidade.html">Política de Privacidade</a>
+            <a href="politica-de-cookies.html">Cookies</a>
+            <a href="perguntas-frequentes.html">Dúvidas Frequentes</a>
           </div>
         </div>
         <div class="container copyright">
@@ -326,17 +366,23 @@
             <div class="col-md-6">
               <p>&copy; <a href="#">KiSite</a>, Todos Direitos Reservados.</p>
             </div>
-
-            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-            <div class="col-md-6">
-              <p>Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>
-            </div>
+            <div class="col-md-6"></div>
           </div>
         </div>
       </div>
       <!-- Footer End -->
 
       <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+      <!-- Botão Flutuante do WhatsApp -->
+      <a
+        href="https://wa.me/5511919072390?text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os."
+        class="whatsapp-float"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fab fa-whatsapp"></i>
+      </a>
     </div>
 
     <!-- JavaScript Libraries -->
@@ -358,4 +404,4 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
   </body>
-</html>
+</html>```

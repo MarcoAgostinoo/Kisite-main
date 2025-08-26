@@ -1,4 +1,3 @@
-
 (function () {
     const root = document.querySelector('.ksg-root');
     if (!root) return;
@@ -10,7 +9,8 @@
     const lbTitle = root.querySelector('#ksg-lb-title');
     const lbDesc = root.querySelector('#ksg-lb-desc');
     const lbMeta = root.querySelector('#ksg-lb-meta');
-    const lbDownload = root.querySelector('#ksg-lb-download');
+    // MODIFICADO: Seleciona o novo botão pelo novo ID
+    const lbWebsiteLink = root.querySelector('#ksg-lb-website-link');
     const lbPrev = root.querySelector('.ksg-lb-prev');
     const lbNext = root.querySelector('.ksg-lb-next');
     const lbClose = root.querySelector('.ksg-lb-close');
@@ -48,7 +48,20 @@
     lbTitle.textContent = el.dataset.ksgTitle || '';
     lbDesc.textContent = el.dataset.ksgDesc || '';
     lbMeta.textContent = `${el.dataset.ksgAuthor || ''} · ${el.dataset.ksgDate || ''}`;
-    lbDownload.href = img.src;
+    
+    // --- LÓGICA MODIFICADA ---
+    // Pega a URL do site do atributo data-ksg-url
+    const siteUrl = el.dataset.ksgUrl;
+
+    // Verifica se a URL foi fornecida no HTML
+    if (siteUrl && siteUrl.trim() !== '') {
+      lbWebsiteLink.href = siteUrl;
+      lbWebsiteLink.style.display = 'inline-block'; // Garante que o botão esteja visível
+    } else {
+      lbWebsiteLink.style.display = 'none'; // Esconde o botão se não houver URL
+    }
+    // --- FIM DA LÓGICA MODIFICADA ---
+
     currentIndex = Number(index);
     renderThumbs();
     lightbox.setAttribute('aria-hidden', 'false');
