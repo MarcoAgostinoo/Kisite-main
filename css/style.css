@@ -2020,7 +2020,7 @@ a:focus {
 }
 
 .contact .contact-form .form-control::placeholder {
-  color: #ffffff;
+  color: #020101;
   opacity: 1;
 }
 
@@ -2664,7 +2664,7 @@ a:focus {
 }
 
 .pricing-card .btn {
-  color: #152034;
+  color: #334366;
   background: #f2ce00;
   border: 2px solid #f2ce00;
   border-radius: 0;
