@@ -781,7 +781,7 @@
                       5 páginas)
                     </li>
                     <li>
-                      <i class="fas fa-check"></i>Até 3 e-mails @seudominio
+                      <i class="fas fa-check"></i>Até 3 e-mails profissionais @seudominio
                     </li>
                     <li><i class="fas fa-check"></i>Integração WhatsApp</li>
                     <li><i class="fas fa-check"></i>Google friendly</li>
@@ -910,69 +910,93 @@
         </div>
       </div>
       <!-- Seção de Preços Fim -->
-      <!-- Video Start -->
-      <div class="video wow fadeIn" data-wow-delay="0.1s">
-        <div class="container">
-          <!-- Wrapper para centralização -->
-          <div class="video-content">
-            <!-- Textos -->
-            <div class="section-header text-center">
-              <p>Veja em Ação</p>
-              <h2>Mais que um Site, um Parceiro para o seu Sucesso</h2>
-              <p class="video-subtitle video-text">
-                Aperte o play e descubra como nossa paixão por tecnologia pode
-                impulsionar o crescimento do seu negócio.
-              </p>
-            </div>
-
-            <!-- Botão de Play -->
-            <button
-              type="button"
-              class="btn-play"
-              data-toggle="modal"
-              data-src="https://www.youtube.com/embed/jsI2aQBlldY"
-              data-target="#videoModal"
-            >
-              <span></span>
-            </button>
-          </div>
-        </div>
+<!-- Video Start -->
+<div class="video wow fadeIn" data-wow-delay="0.1s">
+  <div class="container">
+    <!-- Wrapper para centralização -->
+    <div class="video-content">
+      <!-- Textos -->
+      <div class="section-header text-center">
+        <p>Veja em Ação</p>
+        <h2>Mais que um Site, um Parceiro para o seu Sucesso</h2>
+        <p class="video-subtitle video-text">
+          Aperte o play e descubra como nossa paixão por tecnologia pode
+          impulsionar o crescimento do seu negócio.
+        </p>
       </div>
 
-      <!-- Modal do Vídeo (permanece o mesmo) -->
-      <div
-        class="modal fade"
-        id="videoModal"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
+      <!-- Botão de Play -->
+      <button
+        type="button"
+        class="btn-play"
+        data-toggle="modal"
+        data-src="https://player.vimeo.com/video/1114426908"
+        data-target="#videoModal"
       >
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-body">
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe
-                  class="embed-responsive-item"
-                  src=""
-                  id="video"
-                  allowscriptaccess="always"
-                  allow="autoplay"
-                ></iframe>
-              </div>
-            </div>
-          </div>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</div>
+<!-- Video End -->
+
+<!-- Modal do Vídeo -->
+<div
+  class="modal fade"
+  id="videoModal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe
+            class="embed-responsive-item"
+            src=""
+            id="video"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
-      <!-- Video End -->
+    </div>
+  </div>
+</div>
+<!-- Modal End -->
+
+<!-- Script para controlar o vídeo no modal -->
+<script>
+  $(document).ready(function () {
+    var $videoSrc;
+    $(".btn-play").click(function () {
+      $videoSrc = $(this).data("src");
+    });
+
+    $("#videoModal").on("shown.bs.modal", function () {
+      $("#video").attr(
+        "src",
+        $videoSrc + "?autoplay=1&title=0&byline=0&portrait=0"
+      );
+    });
+
+    $("#videoModal").on("hide.bs.modal", function () {
+      $("#video").attr("src", "");
+    });
+  });
+</script>
+
 
       <!-- Team Start -->
       <!-- <div class="team">
