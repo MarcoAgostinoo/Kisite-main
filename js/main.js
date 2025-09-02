@@ -14,6 +14,29 @@ if (window.location.hostname !== "localhost" && window.location.hostname !== "12
 // currentPath.replace(/\.html$/, ""): Remove a extensão .html do final da string.
 // window.history.replaceState({}, document.title, newPath);: Esta é a parte crucial. Ela altera a URL na barra de endereço do navegador sem recarregar a página. O usuário verá a URL limpa, mas a página continua sendo a mesma (o arquivo .html foi carregado inicialmente).
 
+   // NOVO CÓDIGO: Lazy Loading para os GIFs do Carrossel
+    $(document).ready(function() {
+        $('#carousel').on('slide.bs.carousel', function (event) {
+            // event.relatedTarget é o slide que está prestes a ser exibido
+            var nextSlide = $(event.relatedTarget);
+            
+            // Encontra a imagem dentro do próximo slide que precisa ser carregada
+            var lazyGif = nextSlide.find('img.lazy-gif[data-src]');
+
+            // Se encontrou uma imagem com o atributo 'data-src'
+            if (lazyGif.length > 0) {
+                // Pega o caminho do GIF
+                var gifSrc = lazyGif.data('src');
+                
+                // Define o atributo 'src', o que faz o navegador começar a baixar o GIF
+                lazyGif.attr('src', gifSrc);
+
+                // Remove o atributo 'data-src' e a classe para não carregar novamente
+                lazyGif.removeAttr('data-src').removeClass('lazy-gif');
+            }
+        });
+    });
+
 (function ($) {
     "use strict";
 
