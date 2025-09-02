@@ -777,7 +777,7 @@ a:focus {
   height: 100%;
   min-height: 600px;
   background: linear-gradient(to right, #152034e1, #34446775, #152034e3),
-    url(../img/carousel-1.jpg);
+    url(../img/video-background.gif);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -877,11 +877,24 @@ a:focus {
 .video .section-header p {
   color: #ffffff;
   opacity: 0.9;
+  margin-top: 100px;
+  padding-bottom: 40px;
 }
 .video-text {
   margin-top: 200px;
 }
-
+.btn-video {
+  padding: 15px 35px;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 0;
+  transition: 0.3s;
+}
 .video .section-header h2 {
   color: #ffffff; /* Garante que o título principal também seja branco */
 }
