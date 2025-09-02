@@ -15,27 +15,33 @@ if (window.location.hostname !== "localhost" && window.location.hostname !== "12
 // window.history.replaceState({}, document.title, newPath);: Esta é a parte crucial. Ela altera a URL na barra de endereço do navegador sem recarregar a página. O usuário verá a URL limpa, mas a página continua sendo a mesma (o arquivo .html foi carregado inicialmente).
 
    // NOVO CÓDIGO: Lazy Loading para os GIFs do Carrossel
+// =======================================================================
     $(document).ready(function() {
+        // Evento que dispara ANTES de um slide começar a transição
         $('#carousel').on('slide.bs.carousel', function (event) {
-            // event.relatedTarget é o slide que está prestes a ser exibido
+            // Identifica o próximo slide que será exibido
             var nextSlide = $(event.relatedTarget);
             
-            // Encontra a imagem dentro do próximo slide que precisa ser carregada
+            // Procura por uma imagem 'preguiçosa' (lazy) dentro do próximo slide
             var lazyGif = nextSlide.find('img.lazy-gif[data-src]');
 
-            // Se encontrou uma imagem com o atributo 'data-src'
+            // Se uma imagem preguiçosa for encontrada...
             if (lazyGif.length > 0) {
-                // Pega o caminho do GIF
+                // Pega o caminho real do GIF do atributo 'data-src'
                 var gifSrc = lazyGif.data('src');
                 
-                // Define o atributo 'src', o que faz o navegador começar a baixar o GIF
+                // Coloca o caminho no atributo 'src' para o navegador carregar a imagem
                 lazyGif.attr('src', gifSrc);
 
-                // Remove o atributo 'data-src' e a classe para não carregar novamente
+                // Remove os atributos de lazy loading para não rodar o código novamente para este slide
                 lazyGif.removeAttr('data-src').removeClass('lazy-gif');
             }
         });
+
+        // Força o carrossel a iniciar seu ciclo automático de slides
+        $('#carousel').carousel('cycle');
     });
+// =======================================================================
 
 (function ($) {
     "use strict";
