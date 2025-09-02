@@ -2218,36 +2218,42 @@ a:focus {
   border-right: none;
 }
 
-.footer .copyright {
-  padding: 30px 15px;
-}
-
-.footer .copyright p {
-  margin: 0;
-  color: #ffffff;
-}
-
-.footer .copyright .col-md-6:last-child p {
-  text-align: right;
-}
-
 .footer .copyright p a {
   color: #f2ce00;
   font-weight: 500;
   letter-spacing: 1px;
 }
 
-.footer .copyright p a:hover {
+.footer .footercredits p a:hover {
   color: #ffffff;
 }
 
 @media (max-width: 768px) {
-  .footer .copyright p,
-  .footer .copyright .col-md-6:last-child p {
+  .footer
+  .footer .col-md-6:last-child p {
     margin: 5px 0;
     text-align: center;
   }
+
 }
+.footercredits {
+  width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+  }
+  
+.footercredits a {
+    color: #f2ce00;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  .cta-text-img {
+  max-height: 120px;
+}
+
 .ksg-root {
   /* Variáveis.ksg-root {
     /* Variáveis apenas para o escopo da galeria */
@@ -2740,9 +2746,6 @@ a:focus {
   margin-top: 25px;
   font-size: 15px;
   color: #d1d5db;
-}
-.cta-text-img {
-  max-height: 120px;
 }
 /* Botão do card popular */
 .pricing-card.popular .btn {
