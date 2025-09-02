@@ -8,6 +8,11 @@ if (window.location.hostname !== "localhost" && window.location.hostname !== "12
         window.history.replaceState({}, document.title, newPath);
     }
 }
+//explicação do código acima:
+// window.location.hostname !== "localhost" && window.location.hostname !== "127.0.0.1": Esta condição verifica se o site não está sendo executado localmente. Assim, o script só atuará quando o site estiver no GitHub Pages (ou em outro domínio).
+// currentPath.endsWith(".html"): Verifica se a URL atual termina com .html.
+// currentPath.replace(/\.html$/, ""): Remove a extensão .html do final da string.
+// window.history.replaceState({}, document.title, newPath);: Esta é a parte crucial. Ela altera a URL na barra de endereço do navegador sem recarregar a página. O usuário verá a URL limpa, mas a página continua sendo a mesma (o arquivo .html foi carregado inicialmente).
 
 (function ($) {
     "use strict";
