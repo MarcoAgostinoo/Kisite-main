@@ -1941,23 +1941,29 @@ a:focus {
 /*******************************/
 /********* Contact CSS *********/
 /*******************************/
+/*******************************/
+/********* Contact CSS *********/
+/*******************************/
 .contact {
   position: relative;
   width: 100%;
   padding: 45px 0;
 }
 
+/* Define o preenchimento para as colunas da seção de contato */
 .contact .col-md-6 {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
+/* Estilo para a coluna da esquerda (informações de contato) */
 .contact .col-md-6:first-child {
-  background: #152034;
+  background: #152034; /* Azul escuro */
 }
 
+/* Estilo para a coluna da direita (formulário) */
 .contact .col-md-6:last-child {
-  background: #f2ce00;
+  background: #f2ce00; /* Amarelo */
 }
 
 .contact .contact-info {
@@ -1972,101 +1978,116 @@ a:focus {
   padding: 30px;
   display: flex;
   align-items: flex-start;
-  flex-direction: row;
-  border: 1px solid rgba(256, 256, 256, 0.2);
-}
-
-.contact .contact-item [class^="flaticon-"]::before {
-  margin: 0;
-  color: #f2ce00;
-  font-size: 40px;
-}
-
-.contact .contact-text {
-  position: relative;
-  width: auto;
-  padding-left: 20px;
-}
-
-.contact .contact-text h2 {
-  color: #f2ce00;
-  font-size: 20px;
-  font-weight: 600;
-}
-
-.contact .contact-text p {
-  margin: 0;
-  color: #ffffff;
-  font-size: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .contact .contact-item:last-child {
   margin-bottom: 0;
 }
 
+.contact .contact-item [class^="flaticon-"]::before {
+  margin: 0;
+  color: #f2ce00; /* Amarelo */
+  font-size: 40px;
+}
+
+.contact .contact-text {
+  padding-left: 20px;
+}
+
+.contact .contact-text h2 {
+  color: #f2ce00; /* Amarelo */
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.contact .contact-text p {
+  margin: 0;
+  color: #ffffff; /* Branco */
+  font-size: 16px;
+}
+
+/* Estilos para a seção do formulário */
 .contact .contact-form {
   position: relative;
   padding: 0 15px;
 }
 
-.contact .contact-form input {
-  color: #152034;
-  height: 40px;
-  border-radius: 0;
-  border-width: 1px;
-  border-color: rgba(256, 256, 256, 0.4);
+/* Estilo unificado para TODOS os campos de formulário (input e textarea) */
+.contact .contact-form .form-control {
+  color: #152034; /* Cor do texto digitado: Azul escuro */
   background: transparent;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid rgba(21, 32, 52, 0.4); /* Linha sutil azul escuro */
+  transition: all 0.3s;
 }
 
-.contact .contact-form textarea {
-  color: #ffffff;
-  height: 185px;
-  border-radius: 0;
-  border-width: 1px;
-  border-color: rgba(256, 256, 256, 0.4);
-  background: transparent;
+.contact .contact-form input.form-control {
+  height: 45px;
 }
 
-.contact .contact-form input:focus,
-.contact .contact-form textarea {
+.contact .contact-form textarea.form-control {
+  height: 120px;
+}
+
+/* Remove a sombra ao focar no campo */
+.contact .contact-form .form-control:focus {
   box-shadow: none;
+  border-bottom-color: #152034; /* Linha fica sólida ao focar */
 }
 
+/* Estilo para o placeholder (texto de dica) */
 .contact .contact-form .form-control::placeholder {
-  color: #020101;
-  opacity: 1;
+  color: #152034; /* Azul escuro, com um pouco de transparência */
+  opacity: 0.8;
+}
+
+.contact .contact-form .form-control:-ms-input-placeholder {
+  color: #152034;
 }
 
 .contact .contact-form .form-control::-ms-input-placeholder {
-  color: #ffffff;
+  color: #152034;
 }
 
-.contact .contact-form .form-control::-ms-input-placeholder {
-  color: #ffffff;
-}
-
+/* Estilo para o botão de envio */
 .contact .contact-form .btn {
   padding: 16px 30px;
   font-size: 16px;
   font-weight: 600;
-  color: #f2ce00;
-  background: #152034;
+  color: #f2ce00; /* Cor do texto: Amarelo */
+  background: #152034; /* Cor de fundo: Azul escuro */
   border: none;
   border-radius: 0;
   transition: 0.3s;
 }
 
+/* Efeito hover para o botão de envio */
 .contact .contact-form .btn:hover {
-  color: #152034;
-  background: #ffffff;
+  color: #152034; /* Cor do texto: Azul escuro */
+  background: #ffffff; /* Cor de fundo: Branco */
 }
 
-.contact .help-block ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+/*
+======================================
+Estilos para Mensagens de Status do Formulário
+======================================
+*/
+#form-status {
+  margin-top: 15px;
+  font-weight: 600;
+  text-align: center;
+  font-size: 1rem;
 }
 
+.status-success {
+  color: #0d5a22; /* Verde escuro para melhor contraste no amarelo */
+}
+
+.status-error {
+  color: #dc3545; /* Vermelho */
+}
 /*******************************/
 /********* Footer CSS **********/
 /*******************************/
@@ -2813,3 +2834,169 @@ a:focus {
 
 
       
+
+      /*
+==================================
+Estilos para a Calculadora de Orçamento KiSite
+==================================
+*/
+
+/* Container Principal */
+.card {
+  background-color: transparent;
+  padding: 20px;
+  color: #152034;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card header {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.card header h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #152034;
+  margin-bottom: 15px;
+}
+
+/* Barra de Progresso */
+.progress {
+  height: 8px;
+  background-color: rgba(21, 32, 52, 0.2);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #152034;
+  transition: width 0.4s ease;
+  width: 0%;
+}
+
+/* Área Principal (Perguntas e Resultados) */
+#chatbot {
+  flex-grow: 1;
+  text-align: center;
+}
+
+#chatbot h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Formulário Inicial */
+.initial-form input {
+  width: 100%;
+  margin-bottom: 15px;
+  color: #152034;
+  background: transparent;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid rgba(21, 32, 52, 0.4);
+  height: 45px;
+  padding: 6px 0;
+  transition: all 0.3s;
+}
+.initial-form input:focus {
+  outline: none;
+  border-bottom-color: #152034;
+}
+.initial-form input::placeholder {
+  color: #152034;
+  opacity: 0.8;
+}
+
+/* Botões de Opção e Ação */
+.options, .cta {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.initial-form button, .options button, .cta button, .cta a {
+  padding: 16px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #f2ce00;
+  background: #152034;
+  border: none;
+  border-radius: 0;
+  transition: 0.3s;
+  cursor: pointer;
+  text-align: center;
+  display: block;
+}
+
+.initial-form button:hover, .options button:hover, .cta button:hover, .cta a:hover {
+  color: #152034;
+  background: #ffffff;
+  text-decoration: none;
+}
+
+/* Seção de Resultados */
+.results h2 {
+  margin-bottom: 10px;
+}
+
+.results .estimate-value {
+  font-size: 38px;
+  font-weight: 800;
+  color: #152034;
+  margin: 10px 0;
+}
+
+.results .monthly-fee {
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.results .summary-title {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.results ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.results ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(21, 32, 52, 0.1);
+}
+
+.results ul li span:first-child {
+  opacity: 0.9;
+}
+
+.results ul li span:last-child {
+  font-weight: 600;
+}
+
+/* Feedback de E-mail */
+#email-feedback {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #0d5a22;
+}
+
+/* Rodapé */
+.card footer {
+  text-align: center;
+  font-size: 12px;
+  opacity: 0.7;
+  margin-top: 20px;
+}
