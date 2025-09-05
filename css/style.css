@@ -771,13 +771,15 @@ a:focus {
 /*******************************/
 /********** Video CSS **********/
 /*******************************/
+/* AJUSTE DE PERFORMANCE: Removido o GIF animado do fundo. */
+/* Substitua 'seu-background-estatico.jpg' por uma imagem otimizada. */
 .video {
   position: relative;
   margin: 45px 0;
   height: 100%;
   min-height: 600px;
   background: linear-gradient(to right, #152034e1, #34446775, #152034e3),
-    url(../img/video-background.gif);
+    url(../img/seu-background-estatico.jpg); /* <-- TROCAR AQUI */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -1941,9 +1943,6 @@ a:focus {
 /*******************************/
 /********* Contact CSS *********/
 /*******************************/
-/*******************************/
-/********* Contact CSS *********/
-/*******************************/
 .contact {
   position: relative;
   width: 100%;
@@ -2250,28 +2249,25 @@ Estilos para Mensagens de Status do Formulário
 }
 
 @media (max-width: 768px) {
-  .footer
-  .footer .col-md-6:last-child p {
+  .footer .footer .col-md-6:last-child p {
     margin: 5px 0;
     text-align: center;
   }
-
 }
 .footercredits {
   width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 
-  }
-  
 .footercredits a {
-    color: #f2ce00;
-    font-weight: 500;
-    letter-spacing: 1px;
-  }
-  .cta-text-img {
+  color: #f2ce00;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.cta-text-img {
   max-height: 120px;
 }
 
@@ -2393,16 +2389,12 @@ Estilos para Mensagens de Status do Formulário
   display: flex;
 }
 
-/* Backdrop */
+/* AJUSTE DE PERFORMANCE: Removido o 'backdrop-filter' que é pesado. */
 .ksg-root .ksg-lb-backdrop {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(2, 6, 23, 0.75),
-    rgba(2, 6, 23, 0.9)
-  );
-  backdrop-filter: blur(6px) saturate(1.1);
+  background: rgba(2, 6, 23, 0.9); /* Fundo sólido semitransparente */
+  /* backdrop-filter: blur(6px) saturate(1.1); -- REMOVIDO */
 }
 
 /* Panel */
@@ -2800,42 +2792,38 @@ Estilos para Mensagens de Status do Formulário
   font-weight: 600;
 }
 
+/* Ensure cards are initially hidden for animation */
+.card,
+.contact-section {
+  opacity: 0;
+}
 
-  /* Ensure cards are initially hidden for animation */
-      .card,
-      .contact-section {
-        opacity: 0;
-      }
+/* Estilo para o botão flutuante do WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 65px; /* Posição acima do botão 'back-to-top' */
+  right: 25px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
 
-      /* Estilo para o botão flutuante do WhatsApp */
-      .whatsapp-float {
-        position: fixed;
-        width: 60px;
-        height: 60px;
-        bottom: 65px; /* Posição acima do botão 'back-to-top' */
-        right: 25px;
-        background-color: #25d366;
-        color: #fff;
-        border-radius: 50px;
-        text-align: center;
-        font-size: 30px;
-        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
-        z-index: 100;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: transform 0.3s ease;
-      }
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  color: #fff;
+}
 
-      .whatsapp-float:hover {
-        transform: scale(1.1);
-        color: #fff;
-      }
-
-
-      
-
-      /*
+/*
 ==================================
 Estilos para a Calculadora de Orçamento KiSite
 ==================================
@@ -2913,13 +2901,17 @@ Estilos para a Calculadora de Orçamento KiSite
 }
 
 /* Botões de Opção e Ação */
-.options, .cta {
+.options,
+.cta {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.initial-form button, .options button, .cta button, .cta a {
+.initial-form button,
+.options button,
+.cta button,
+.cta a {
   padding: 16px 30px;
   font-size: 16px;
   font-weight: 600;
@@ -2933,7 +2925,10 @@ Estilos para a Calculadora de Orçamento KiSite
   display: block;
 }
 
-.initial-form button:hover, .options button:hover, .cta button:hover, .cta a:hover {
+.initial-form button:hover,
+.options button:hover,
+.cta button:hover,
+.cta a:hover {
   color: #152034;
   background: #ffffff;
   text-decoration: none;
@@ -3001,33 +2996,12 @@ Estilos para a Calculadora de Orçamento KiSite
   margin-top: 20px;
 }
 
+/*Animação de text-shadow */
 .neon-glow {
- color: #fff;
- text-shadow:
- 0 0 7px #fff,
- 0 0 10px #fff,
- 0 0 21px #fff,
- 0 0 42px #16FFBB,
- 0 0 82px #16FFBB,
- 0 0 92px #16FFBB,
- 0 0 102px #16FFBB,
- 0 0 151px #16FFBB;
- animation: flicker 1.5s infinite alternate;
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #16ffbb,
+    0 0 82px #16ffbb, 0 0 92px #16ffbb, 0 0 102px #16ffbb, 0 0 151px #16ffbb;
+  /* animation: flicker 1.5s infinite alternate; -- REMOVIDO */
 }
 
-@keyframes flicker {
- 0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
- text-shadow:
- 0 0 7px #fff,
- 0 0 10px #fff,
- 0 0 21px #fff,
- 0 0 42px #16FFBB,
- 0 0 82px #16FFBB,
- 0 0 92px #16FFBB,
- 0 0 102px #16FFBB,
- 0 0 151px #16FFBB;
- }
- 20%, 24%, 55% {
- text-shadow: none;
- }
-}
+/* AJUSTE DE PERFORMANCE: Keyframes não são mais necessários e foram removidos. */
