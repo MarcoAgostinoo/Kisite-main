@@ -21,15 +21,25 @@
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
   <link href="lib/slick/slick.css" rel="stylesheet" />
   <link href="lib/slick/slick-theme.css" rel="stylesheet" />
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
-/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+
   <!-- Template Stylesheet -->
   <link href="css/style.css" rel="stylesheet" />
+  <!-- CSS específico da página de contato -->
+  <link href="css/contato.css" rel="stylesheet" />
 </head>
 
 <body>
+
+  <!-- ================================== -->
+  <!--      ESTRUTURA DO LOADER (ADICIONADO)    -->
+  <!-- ================================== -->
+  <div class="loader-container">
+    <div class="loader"></div>
+    <p>Enviando sua mensagem...</p>
+  </div>
+
+
   <div class="wrapper">
     <!-- Top Bar Start -->
     <div class="top-bar">
@@ -145,23 +155,23 @@
 
           <div class="col-md-6">
             <div class="contact-form">
-              <form id="contact-form">
-                <div class="control-group">
+              <form id="contact-form" name="contact" method="POST">
+                <div class="form-group">
                   <input type="text" class="form-control" name="from_name" placeholder="Seu Nome" required />
                 </div>
-                <div class="control-group">
+                <div class="form-group">
                   <input type="email" class="form-control" name="from_email" placeholder="Seu E-mail" required />
                 </div>
-                <div class="control-group">
+                <div class="form-group">
                   <input type="text" class="form-control" name="subject" placeholder="Assunto" required />
                 </div>
-                <div class="control-group">
+                <div class="form-group">
                   <textarea class="form-control" name="message" placeholder="Sua Mensagem" required></textarea>
                 </div>
                 <div>
                   <button class="btn" type="submit">Enviar Mensagem</button>
                 </div>
-                <div id="form-status" class="mt-2"></div>
+                <div id="form-status" class="mt-3"></div>
               </form>
             </div>
           </div>
@@ -250,6 +260,7 @@
 
   <!-- Template JS -->
   <script src="js/main.js"></script>
+  <!-- JavaScript do Formulário -->
   <script src="js/form-handler.js"></script>
 </body>
 </html>

@@ -26,6 +26,7 @@
 
   <!-- Template Stylesheet -->
   <link href="css/style.css" rel="stylesheet" />
+  <link href="css/index.css" rel="stylesheet" />
   <!-- Bootstrap CSS -->
 </head>
 
@@ -346,59 +347,6 @@
       </div>
     </div>
     <!-- Customer Journey End -->
-
-    <!-- Fact Start -->
-    <div class="fact">
-      <div class="container-fluid">
-        <div class="row counters">
-          <div class="col-md-6 fact-left wow slideInLeft">
-            <div class="row">
-              <div class="col-6">
-                <div class="fact-icon">
-                  <i class="flaticon-worker"></i>
-                </div>
-                <div class="fact-text">
-                  <h2 data-toggle="counter-up">50</h2>
-                  <p>Clientes Satisfeitos</p>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="fact-icon">
-                  <i class="flaticon-building"></i>
-                </div>
-                <div class="fact-text">
-                  <h2 data-toggle="counter-up">70</h2>
-                  <p>Projetos Entregues</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 fact-right wow slideInRight">
-            <div class="row">
-              <div class="col-6">
-                <div class="fact-icon">
-                  <i class="flaticon-address"></i>
-                </div>
-                <div class="fact-text">
-                  <h2 data-toggle="counter-up">6</h2>
-                  <p>Anos de Mercado</p>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="fact-icon">
-                  <i class="flaticon-crane"></i>
-                </div>
-                <div class="fact-text">
-                  <h2 data-toggle="counter-up">100</h2>
-                  <p>% de Foco no Sucesso do Cliente</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Fact End -->
 
     <!-- Service Start -->
     <div id="servicos" class="service">
@@ -762,32 +710,18 @@
       </div>
     </div>
     <!-- Seção de Preços Fim -->
+
+
     <!-- Video Start -->
     <div class="video wow fadeIn" data-wow-delay="0.1s">
       <div class="container">
-        <!-- Wrapper para centralização -->
-        <div class="video-content">
-          <!-- Textos -->
-          <div class="section-header text-center">
-            <p>Podemos te ajudar.</p>
-            <h2>Somos a sua agência parceira na criação de sites profissionais.</h2>
-            <p class="video-subtitle video-text">
-              Com mais de 6 anos de experiência, ajudamos a sua empresa a se destacar no mundo digital.
-            </p>
-          </div>
-          <a href="https://wa.me/5511919072390?text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
-            target="_blank" class="btn-video">Entre em Contato</a>
-          <!-- Botão de Play -->
-          <!-- <button type="button" class="btn-play" data-toggle="modal"
-            data-src="https://player.vimeo.com/video/1114426908" data-target="#videoModal">
-            <span></span>
-          </button> -->
-        </div>
+        <button type="button" class="btn-play" data-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc"
+          data-target="#videoModal">
+          <span></span>
+        </button>
       </div>
     </div>
-    <!-- Video End -->
 
-    <!-- Modal do Vídeo -->
     <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
       aria-hidden="true">
       <div class="modal-dialog" role="document">
@@ -796,183 +730,18 @@
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
+            <!-- 16:9 aspect ratio -->
             <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="" id="video" frameborder="0"
-                allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+              <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always"
+                allow="autoplay"></iframe>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Modal End -->
+    <!-- Video End -->
 
-    <!-- Script para controlar o vídeo no modal -->
-    <script>
-      $(document).ready(function () {
-        var $videoSrc;
-        $(".btn-play").click(function () {
-          $videoSrc = $(this).data("src");
-        });
-
-        $("#videoModal").on("shown.bs.modal", function () {
-          $("#video").attr(
-            "src",
-            $videoSrc + "?autoplay=1&title=0&byline=0&portrait=0"
-          );
-        });
-
-        $("#videoModal").on("hide.bs.modal", function () {
-          $("#video").attr("src", "");
-        });
-      });
-    </script>
-
-
-    <!-- Team Start -->
-    <!-- <div class="team">
-          <div class="container">
-            <div class="section-header text-center">
-              <p>Our Team</p>
-              <h2>Meet Our Engineer</h2>
-            </div>
-            <div class="row">
-              <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="team-item">
-                  <div class="team-img">
-                    <img src="img/team-1.jpg" alt="Team Image" />
-                  </div>
-                  <div class="team-text">
-                    <h2>Adam Phillips</h2>
-                    <p>CEO & Founder</p>
-                  </div>
-                  <div class="team-social">
-                    <a class="social-tw" href=""
-                      ><i class="fab fa-twitter"></i
-                    ></a>
-                    <a class="social-fb" href=""
-                      ><i class="fab fa-facebook-f"></i
-                    ></a>
-                    <a class="social-li" href=""
-                      ><i class="fab fa-linkedin-in"></i
-                    ></a>
-                    <a class="social-in" href=""
-                      ><i class="fab fa-instagram"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-                <div class="team-item">
-                  <div class="team-img">
-                    <img src="img/team-2.jpg" alt="Team Image" />
-                  </div>
-                  <div class="team-text">
-                    <h2>Dylan Adams</h2>
-                    <p>Civil Engineer</p>
-                  </div>
-                  <div class="team-social">
-                    <a class="social-tw" href=""
-                      ><i class="fab fa-twitter"></i
-                    ></a>
-                    <a class="social-fb" href=""
-                      ><i class="fab fa-facebook-f"></i
-                    ></a>
-                    <a class="social-li" href=""
-                      ><i class="fab fa-linkedin-in"></i
-                    ></a>
-                    <a class="social-in" href=""
-                      ><i class="fab fa-instagram"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="team-item">
-                  <div class="team-img">
-                    <img src="img/team-3.jpg" alt="Team Image" />
-                  </div>
-                  <div class="team-text">
-                    <h2>Jhon Doe</h2>
-                    <p>Interior Designer</p>
-                  </div>
-                  <div class="team-social">
-                    <a class="social-tw" href=""
-                      ><i class="fab fa-twitter"></i
-                    ></a>
-                    <a class="social-fb" href=""
-                      ><i class="fab fa-facebook-f"></i
-                    ></a>
-                    <a class="social-li" href=""
-                      ><i class="fab fa-linkedin-in"></i
-                    ></a>
-                    <a class="social-in" href=""
-                      ><i class="fab fa-instagram"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
-                <div class="team-item">
-                  <div class="team-img">
-                    <img src="img/team-4.jpg" alt="Team Image" />
-                  </div>
-                  <div class="team-text">
-                    <h2>Josh Dunn</h2>
-                    <p>Painter</p>
-                  </div>
-                  <div class="team-social">
-                    <a class="social-tw" href=""
-                      ><i class="fab fa-twitter"></i
-                    ></a>
-                    <a class="social-fb" href=""
-                      ><i class="fab fa-facebook-f"></i
-                    ></a>
-                    <a class="social-li" href=""
-                      ><i class="fab fa-linkedin-in"></i
-                    ></a>
-                    <a class="social-in" href=""
-                      ><i class="fab fa-instagram"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
-    <!-- Team End -->
-
-    <!-- Script Faq -->
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        // Select all cards and the contact section
-        const elements = document.querySelectorAll(".card, .contact-section");
-
-        // Create an Intersection Observer
-        const observer = new IntersectionObserver(
-          (entries, observer) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                // Add Animate.css classes when element is visible
-                entry.target.classList.add(
-                  "animate__animated",
-                  "animate__fadeInUp"
-                );
-                entry.target.style.opacity = 1;
-                // Stop observing after animation to prevent re-triggering
-                observer.unobserve(entry.target);
-              }
-            });
-          },
-          {
-            threshold: 0.1, // Trigger when 10% of the element is visible
-          }
-        );
-
-        // Observe each element
-        elements.forEach((element) => observer.observe(element));
-      });
-    </script>
-    <!-- FAQs Start -->
+<!-- FAQs Start -->
     <div class="faqs">
       <div class="container">
         <div class="section-header text-center">
@@ -1166,68 +935,68 @@
     </div>
     <!-- FAQs End -->
 
-    <!-- Testimonial Start -->
-    <div class="testimonial wow fadeIn" data-wow-delay="0.1s">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="testimonial-slider-nav">
-              <div class="slider-nav">
-                <img src="img/testimonial-1.jpg" alt="Testimonial" />
-              </div>
-              <div class="slider-nav">
-                <img src="img/testimonial-2.jpg" alt="Testimonial" />
-              </div>
-              <div class="slider-nav">
-                <img src="img/testimonial-3.jpg" alt="Testimonial" />
-              </div>
-              <div class="slider-nav">
-                <img src="img/testimonial-4.jpg" alt="Testimonial" />
+      <!-- Testimonial Start -->
+      <div class="testimonial wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="testimonial-slider-nav">
+                <div class="slider-nav">
+                  <img src="img/testimonial-1.jpg" alt="Testimonial" />
+                </div>
+                <div class="slider-nav">
+                  <img src="img/testimonial-2.jpg" alt="Testimonial" />
+                </div>
+                <div class="slider-nav">
+                  <img src="img/testimonial-3.jpg" alt="Testimonial" />
+                </div>
+                <div class="slider-nav">
+                  <img src="img/testimonial-4.jpg" alt="Testimonial" />
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <div class="testimonial-slider">
-              <div class="slider-item">
-                <h3>Mário Fanucchi</h3>
-                <h4>Dono de oficina mecânica</h4>
-                <p>
-                  O KiSite facilitou muito a criação do site da minha
-                  mecânica. Agora está muito mais rápido e fácil de usar.
-                </p>
-              </div>
-              <div class="slider-item">
-                <h3>Andreia Miguel</h3>
-                <h4>Empreendedora Independente</h4>
-                <p>
-                  O site da minha doceria ficou bonito e atraiu mais clientes,
-                  ficou ótimo.
-                </p>
-              </div>
-              <div class="slider-item">
-                <h3>João da Silva</h3>
-                <h4>Advogado</h4>
-                <p>
-                  O site do meu escritório ficou muito melhor do que eu
-                  esperava. Agora tenho mais clientes.
-                </p>
-              </div>
-              <div class="slider-item">
-                <h3>João da Silva</h3>
-                <h4>Advogado</h4>
-                <p>
-                  O site do meu escritório ficou muito melhor do que eu
-                  esperava. Agora tenho mais clientes.
-                </p>
+          <div class="row">
+            <div class="col-12">
+              <div class="testimonial-slider">
+                <div class="slider-item">
+                  <h3>Mário Fanucchi</h3>
+                  <h4>Dono de oficina mecânica</h4>
+                  <p>
+                    O KiSite facilitou muito a criação do site da minha
+                    mecânica. Agora está muito mais rápido e fácil de usar.
+                  </p>
+                </div>
+                <div class="slider-item">
+                  <h3>Andreia Miguel</h3>
+                  <h4>Empreendedora Independente</h4>
+                  <p>
+                    O site da minha doceria ficou bonito e atraiu mais clientes,
+                    ficou ótimo.
+                  </p>
+                </div>
+                <div class="slider-item">
+                  <h3>João da Silva</h3>
+                  <h4>Advogado</h4>
+                  <p>
+                    O site do meu escritório ficou muito melhor do que eu
+                    esperava. Agora tenho mais clientes.
+                  </p>
+                </div>
+                <div class="slider-item">
+                  <h3>João da Silva</h3>
+                  <h4>Advogado</h4>
+                  <p>
+                    O site do meu escritório ficou muito melhor do que eu
+                    esperava. Agora tenho mais clientes.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Testimonial End -->
+      <!-- Testimonial End -->
 
 
 
@@ -1310,7 +1079,6 @@
       class="whatsapp-float" target="_blank" rel="noopener noreferrer">
       <i class="fab fa-whatsapp"></i>
     </a>
-  </div>
   </div>
 
   <!-- JavaScript Libraries -->
