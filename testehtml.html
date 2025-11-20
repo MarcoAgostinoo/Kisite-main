@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Texto Neon Glow</title>
+  <style>
+    /* Fundo e tipografia básicos para destacar o efeito */
+    :root {
+      --bg: #0b0f14;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: radial-gradient(60% 60% at 50% 40%, #0f1723 0%, var(--bg) 60%, #000 100%);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      color: #fff;
+    }
+    .wrap {
+      text-align: center;
+      padding: 2rem;
+    }
+    h1 {
+      font-size: clamp(2.2rem, 7vw, 6rem);
+      margin: 0 0 0.75rem;
+      letter-spacing: 0.06em;
+    }
+    p {
+      opacity: 0.85;
+      margin: 0.25rem 0 0;
+    }
+    code {
+      background: rgba(255,255,255,0.08);
+      padding: .15rem .4rem;
+      border-radius: .35rem;
+    }
+
+    /* Seu efeito NEON */
+    .neon-glow {
+      color: #fff;
+      text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #16FFBB,
+        0 0 82px #16FFBB,
+        0 0 92px #16FFBB,
+        0 0 102px #16FFBB,
+        0 0 151px #16FFBB;
+      animation: flicker 1.5s infinite alternate;
+    }
+
+    @keyframes flicker {
+      0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        text-shadow:
+          0 0 7px #fff,
+          0 0 10px #fff,
+          0 0 21px #fff,
+          0 0 42px #16FFBB,
+          0 0 82px #16FFBB,
+          0 0 92px #16FFBB,
+          0 0 102px #16FFBB,
+          0 0 151px #16FFBB;
+      }
+      20%, 24%, 55% {
+        text-shadow: none;
+      }
+    }
+
+    /* Acessibilidade: reduz animação se o usuário preferir menos movimento */
+    @media (prefers-reduced-motion: reduce) {
+      .neon-glow { animation: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1 class="neon-glow">NEON GLOW</h1>
+    <p>Use <code>class="neon-glow"</code> em qualquer texto para aplicar o efeito.</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,198 @@
+/*******************************/
+/********* Contact CSS *********/
+/*******************************/
+.contact {
+  position: relative;
+  width: 100%;
+  padding: 45px 0;
+}
+
+/* Define o preenchimento para as colunas da seção de contato */
+.contact .col-md-6 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* Estilo para a coluna da esquerda (informações de contato) */
+.contact .col-md-6:first-child {
+  background: #152034; /* Azul escuro */
+}
+
+/* Estilo para a coluna da direita (formulário) */
+.contact .col-md-6:last-child {
+  background: #f2ce00; /* Amarelo */
+}
+
+.contact .contact-info {
+  position: relative;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.contact .contact-item {
+  position: relative;
+  margin-bottom: 30px;
+  padding: 30px;
+  display: flex;
+  align-items: flex-start;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contact .contact-item:last-child {
+  margin-bottom: 0;
+}
+
+.contact .contact-item [class^="flaticon-"]::before {
+  margin: 0;
+  color: #f2ce00; /* Amarelo */
+  font-size: 40px;
+}
+
+.contact .contact-text {
+  padding-left: 20px;
+}
+
+.contact .contact-text h2 {
+  color: #f2ce00; /* Amarelo */
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.contact .contact-text p {
+  margin: 0;
+  color: #ffffff; /* Branco */
+  font-size: 16px;
+}
+
+/* Estilos para a seção do formulário */
+.contact .contact-form {
+  position: relative;
+  padding: 0 15px;
+}
+
+.contact .contact-form .form-group {
+    margin-bottom: 1rem;
+}
+
+/* Estilo unificado para TODOS os campos de formulário (input e textarea) */
+.contact .contact-form .form-control {
+  color: #152034; /* Cor do texto digitado: Azul escuro */
+  background: transparent;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid rgba(21, 32, 52, 0.4); /* Linha sutil azul escuro */
+  transition: all 0.3s;
+}
+
+.contact .contact-form input.form-control {
+  height: 45px;
+}
+
+.contact .contact-form textarea.form-control {
+  height: 120px;
+}
+
+/* Remove a sombra ao focar no campo */
+.contact .contact-form .form-control:focus {
+  box-shadow: none;
+  border-bottom-color: #152034; /* Linha fica sólida ao focar */
+}
+
+/* Estilo para o placeholder (texto de dica) */
+.contact .contact-form .form-control::placeholder {
+  color: #152034; /* Azul escuro, com um pouco de transparência */
+  opacity: 0.8;
+}
+
+.contact .contact-form .form-control:-ms-input-placeholder {
+  color: #152034;
+}
+
+.contact .contact-form .form-control::-ms-input-placeholder {
+  color: #152034;
+}
+
+/* Estilo para o botão de envio */
+.contact .contact-form .btn {
+  padding: 16px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #f2ce00; /* Cor do texto: Amarelo */
+  background: #152034; /* Cor de fundo: Azul escuro */
+  border: none;
+  border-radius: 0;
+  transition: 0.3s;
+}
+
+/* Efeito hover para o botão de envio */
+.contact .contact-form .btn:hover {
+  color: #152034; /* Cor do texto: Azul escuro */
+  background: #ffffff; /* Cor de fundo: Branco */
+}
+
+/*
+======================================
+Estilos para Mensagens de Status do Formulário
+======================================
+*/
+#form-status {
+  margin-top: 15px;
+  font-weight: 600;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.status-success {
+  color: #0d5a22; /* Verde escuro para melhor contraste no amarelo */
+}
+
+.status-error {
+  color: #dc3545; /* Vermelho */
+}
+
+/*
+======================================
+Estilos para o Loader
+======================================
+*/
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Garante que fique por cima de tudo */
+  visibility: hidden; /* Inicialmente escondido */
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.loader-container.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.loader {
+  border: 8px solid #f3f3f3; /* Cor clara do círculo */
+  border-top: 8px solid #007bff; /* Cor principal da animação (azul do Bootstrap) */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1.5s linear infinite; /* Animação de rotação */
+}
+
+.loader-container p {
+  color: #ffffff;
+  margin-top: 15px;
+  font-size: 1.2em;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
