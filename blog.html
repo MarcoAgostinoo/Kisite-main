@@ -2,14 +2,17 @@
 <html lang="pt-BR">
   <head>
     <meta charset="utf-8" />
-    <title>Blog - KiSite Agência Digital</title>
+    <!-- Título Otimizado para buscas regionais -->
+    <title>Blog KiSite | Dicas de Marketing Digital para Ferraz e Região</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    
+    <!-- Keywords focadas em educação do cliente -->
     <meta
-      content="Blog da KiSite, artigos sobre SEO, desenvolvimento de sites, marketing digital"
+      content="Dicas de marketing Ferraz, Blog de SEO, Como vender online, Criação de Sites Alto Tietê"
       name="keywords"
     />
     <meta
-      content="Fique por dentro das melhores estratégias de marketing digital e tecnologia para sua empresa."
+      content="Aprenda como fazer sua empresa crescer na internet. Artigos práticos sobre sites, lojas virtuais e vendas para negócios de Ferraz de Vasconcelos."
       name="description"
     />
 
@@ -39,6 +42,20 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+
+    <!-- Schema de CollectionPage (Lista de Artigos) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "headline": "Blog de Estratégias Digitais da KiSite",
+      "description": "Artigos sobre criação de sites e marketing para empresas de Ferraz de Vasconcelos.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "KiSite Agência Digital"
+      }
+    }
+    </script>
   </head>
 
   <body>
@@ -50,8 +67,7 @@
             <div class="col-lg-4 col-md-12">
               <div class="logo">
                 <a href="index.html">
-                  <h1>KiSite</h1>
-                  <!-- <img src="img/logo.jpg" alt="Logo"> -->
+                  <img src="img/logo.png" alt="KiSite Logo" />
                 </a>
               </div>
             </div>
@@ -116,11 +132,9 @@
               id="navbarCollapse"
             >
               <div class="navbar-nav mr-auto">
-                <a href="index.html" class="nav-item nav-link active">Início</a>
+                <a href="index.html" class="nav-item nav-link">Início</a>
                 <a href="about.html" class="nav-item nav-link">Sobre</a>
-                <a href="index.html#portifolio" class="nav-item nav-link"
-                  >Portifólio</a
-                >
+                <a href="index.html#portifolio" class="nav-item nav-link">Portifólio</a>
                 <div class="nav-item dropdown">
                   <a
                     href="#"
@@ -129,16 +143,12 @@
                     >Páginas</a
                   >
                   <div class="dropdown-menu">
-                    <a href="site-expresso.html" class="dropdown-item"
-                      >Site Expresso</a
-                    >
-                    <a href="site-sob-medida.html" class="dropdown-item"
-                      >Site Sob Medida</a
-                    >
+                    <a href="site-expresso.html" class="dropdown-item">Site Expresso</a>
+                    <a href="site-sob-medida.html" class="dropdown-item">Site Sob Medida</a>
                   </div>
                 </div>
                 <a href="index.html#precos" class="nav-item nav-link">Preços</a>
-                <a href="blog.html" class="nav-item nav-link">Blog</a>
+                <a href="blog.html" class="nav-item nav-link active">Blog</a>
                 <a href="contact.html" class="nav-item nav-link">Contato</a>
               </div>
               <div class="ml-auto">
@@ -164,7 +174,7 @@
             </div>
             <div class="col-12">
               <a href="index.html">Início</a>
-              <a href="blog.html">Nosso Blog</a>
+              <a href="blog.html">Conteúdo Estratégico</a>
             </div>
           </div>
         </div>
@@ -175,22 +185,27 @@
       <div class="blog">
         <div class="container">
           <div class="section-header text-center">
-            <p>Conteúdo Estratégico</p>
-            <h2>Artigos Recentes do Nosso Blog</h2>
+            <p>Conhecimento para Crescer</p>
+            <h2>Estratégias Digitais para Negócios de Ferraz</h2>
           </div>
+          
+          <!-- Grid de Posts -->
           <div class="row blog-page">
-            <!-- Artigo 1 -->
+            
+            <!-- Artigo 1: Sinais que precisa de site -->
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
               <div class="blog-item">
                 <div class="blog-img">
-                  <img
-                    src="img/blog/blog-index6.jpg"
-                    alt="Mão apontando para a tela de um tablet com a palavra Credibilidade"
-                  />
+                  <a href="blog/5-Sinais-de-que-sua-Empresa-Precisa-de-um-Site-Profissional.html">
+                    <img
+                      src="img/blog/blog-index6.jpg"
+                      alt="Empresário analisando site"
+                    />
+                  </a>
                 </div>
                 <div class="blog-title">
                   <h3>
-                    5 Sinais de que sua Empresa Precisa de um Site Profissional
+                    <a href="blog/5-Sinais-de-que-sua-Empresa-Precisa-de-um-Site-Profissional.html">5 Sinais Urgentes que sua Empresa Precisa de um Site</a>
                   </h3>
                   <a
                     class="btn"
@@ -199,30 +214,31 @@
                   >
                 </div>
                 <div class="blog-meta">
-                  <p>Por<a href="about.html#foto-fundado">Admin</a></p>
-                  <p>Em<a href="">Estratégia Digital</a></p>
+                  <p>Por <a href="#">KiSite</a></p>
+                  <p>Em <a href="#">Estratégia</a></p>
                 </div>
                 <div class="blog-text">
                   <p>
-                    Descubra por que ter apenas uma rede social limita seu
-                    negócio. Veja como um site aumenta a credibilidade, o
-                    controle e a geração de leads.
+                    Só ter Instagram não basta. Veja se você está perdendo clientes em Ferraz por não ter um endereço próprio na web.
                   </p>
                 </div>
               </div>
             </div>
-            <!-- Artigo 2 -->
+
+            <!-- Artigo 2: Site Rápido vs Sob Medida -->
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
               <div class="blog-item">
                 <div class="blog-img">
-                  <img
-                    src="img/blog/blog-index1.jpg"
-                    alt="Bifurcação com placas indicando Site Expresso e Site Sob Medida"
-                  />
+                  <a href="blog/Site-Expresso-vs-Site-Sob-Medida.html">
+                    <img
+                      src="img/blog/blog-index1.jpg"
+                      alt="Placas de direção site rápido vs exclusivo"
+                    />
+                  </a>
                 </div>
                 <div class="blog-title">
                   <h3>
-                    Site Expresso vs. Site Sob Medida: Qual a Melhor Opção?
+                    <a href="blog/Site-Expresso-vs-Site-Sob-Medida.html">Site Rápido ou Sob Medida: Qual o Melhor Custo-Benefício?</a>
                   </h3>
                   <a
                     class="btn"
@@ -231,30 +247,31 @@
                   >
                 </div>
                 <div class="blog-meta">
-                  <p>Por<a href="about.html#foto-fundado">Admin</a></p>
-                  <p>Em<a href="">Desenvolvimento Web</a></p>
+                  <p>Por <a href="#">KiSite</a></p>
+                  <p>Em <a href="#">Investimento</a></p>
                 </div>
                 <div class="blog-text">
                   <p>
-                    Entenda as diferenças entre um site rápido baseado em modelo
-                    e um projeto exclusivo. Um guia para ajudar você a decidir a
-                    solução ideal para o momento do seu negócio.
+                    Está com orçamento apertado ou precisa de algo exclusivo? Um guia honesto para ajudar na sua decisão.
                   </p>
                 </div>
               </div>
             </div>
-            <!-- Artigo 3 -->
+
+            <!-- Artigo 3: Loja Virtual -->
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
               <div class="blog-item">
                 <div class="blog-img">
-                  <img
-                    src="img/blog/blog-index5.jpg"
-                    alt="Carrinho de compras saindo da tela de um notebook"
-                  />
+                  <a href="blog/Como-Transformar-seu-Site-em-uma-Maquina-de-Vendas.html">
+                    <img
+                      src="img/blog/blog-index5.jpg"
+                      alt="Loja virtual vendendo"
+                    />
+                  </a>
                 </div>
                 <div class="blog-title">
                   <h3>
-                    Guia: Como Transformar seu Site em uma Máquina de Vendas 24h
+                    <a href="blog/Como-Transformar-seu-Site-em-uma-Maquina-de-Vendas.html">Transforme seu Site em uma Máquina de Vendas 24h</a>
                   </h3>
                   <a
                     class="btn"
@@ -263,87 +280,89 @@
                   >
                 </div>
                 <div class="blog-meta">
-                  <p>Por<a href="about.html#foto-fundado">Admin</a></p>
-                  <p>Em<a href="">E-commerce</a></p>
+                  <p>Por <a href="#">KiSite</a></p>
+                  <p>Em <a href="#">E-commerce</a></p>
                 </div>
                 <div class="blog-text">
                   <p>
-                    Vá além de um cartão de visitas digital. Aprenda a usar seu
-                    site para vender ativamente com dicas de layout, descrições
-                    de produtos, checkout e segurança.
+                    Pare de usar o site como cartão de visitas. Aprenda a vender seus produtos para todo o Alto Tietê e Brasil.
                   </p>
                 </div>
               </div>
             </div>
-            <!-- Artigo 4 -->
+
+            <!-- Artigo 4: SEO -->
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
               <div class="blog-item">
                 <div class="blog-img">
-                  <img
-                    src="img/blog/blog-index4.jpg"
-                    alt="Lupa focando na palavra SEO em um mapa"
-                  />
+                  <a href="blog/SEO-para-Pequenas-Empresas.html">
+                    <img
+                      src="img/blog/blog-index4.jpg"
+                      alt="Busca SEO no Google"
+                    />
+                  </a>
                 </div>
                 <div class="blog-title">
                   <h3>
-                    SEO para Pequenas Empresas: 7 Passos para Aparecer no Google
+                    <a href="blog/SEO-para-Pequenas-Empresas.html">SEO para Pequenas Empresas: Como Aparecer no Google</a>
                   </h3>
                   <a class="btn" href="blog/SEO-para-Pequenas-Empresas.html"
                     >+</a
                   >
                 </div>
                 <div class="blog-meta">
-                  <p>Por<a href="about.html#foto-fundado">Admin</a></p>
-                  <p>Em<a href="">SEO</a></p>
+                  <p>Por <a href="#">KiSite</a></p>
+                  <p>Em <a href="#">Google</a></p>
                 </div>
                 <div class="blog-text">
                   <p>
-                    Domine os 7 passos essenciais para otimizar seu site, desde
-                    a pesquisa de palavras-chave até o Google Meu Negócio, e
-                    atraia clientes que buscam ativamente por você.
+                    7 passos práticos para colocar sua oficina, loja ou escritório de Ferraz na primeira página das buscas.
                   </p>
                 </div>
               </div>
             </div>
-            <!-- Artigo 5 -->
+
+            <!-- Artigo 5: Landing Page -->
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
               <div class="blog-item">
                 <div class="blog-img">
-                  <img
-                    src="img/blog/blog-index3.jpg"
-                    alt="Gráfico de funil de conversão apontando para um formulário"
-                  />
+                  <a href="blog/O-que-é-uma-Landing-Page.html">
+                    <img
+                      src="img/blog/blog-index3.jpg"
+                      alt="Funil de vendas landing page"
+                    />
+                  </a>
                 </div>
                 <div class="blog-title">
-                  <h3>O que é uma Landing Page e Como Ela Dobra seus Leads</h3>
+                  <h3><a href="blog/O-que-é-uma-Landing-Page.html">O que é uma Landing Page e Como Ela Dobra seus Leads</a></h3>
                   <a class="btn" href="blog/O-que-é-uma-Landing-Page.html">+</a>
                 </div>
                 <div class="blog-meta">
-                  <p>Por<a href="about.html#foto-fundado">Admin</a></p>
-                  <p>Em<a href="">Conversão e Vendas</a></p>
+                  <p>Por <a href="#">KiSite</a></p>
+                  <p>Em <a href="#">Vendas</a></p>
                 </div>
                 <div class="blog-text">
                   <p>
-                    Descubra a arma secreta do marketing digital. Entenda por
-                    que uma página 100% focada é a melhor ferramenta para
-                    converter anúncios em resultados reais e clientes.
+                    O segredo para parar de perder dinheiro com anúncios que não convertem. Entenda essa estratégia poderosa.
                   </p>
                 </div>
               </div>
             </div>
-            <!-- Artigo 6 -->
+
+            <!-- Artigo 6: Manutenção -->
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
               <div class="blog-item">
                 <div class="blog-img">
-                  <img
-                    src="img/blog/blog-index2.jpg"
-                    alt="Engrenagens e ferramentas sobre a tela de um site"
-                  />
+                  <a href="blog/Por-que-a-Manutencao-do-Site-e-Tao-Importante.html">
+                    <img
+                      src="img/blog/blog-index2.jpg"
+                      alt="Manutenção de site"
+                    />
+                  </a>
                 </div>
                 <div class="blog-title">
                   <h3>
-                    Por que a Manutenção do Site é Tão Importante Quanto a
-                    Criação?
+                    <a href="blog/Por-que-a-Manutencao-do-Site-e-Tao-Importante.html">Site Lento ou Inseguro? A Importância da Manutenção</a>
                   </h3>
                   <a
                     class="btn"
@@ -352,36 +371,29 @@
                   >
                 </div>
                 <div class="blog-meta">
-                  <p>Por<a href="about.html#foto-fundado">Admin</a></p>
-                  <p>Em<a href="">Segurança e Performance</a></p>
+                  <p>Por <a href="#">KiSite</a></p>
+                  <p>Em <a href="#">Segurança</a></p>
                 </div>
                 <div class="blog-text">
                   <p>
-                    Seu site é como um carro: precisa de revisões. Entenda a
-                    importância da manutenção contínua para garantir segurança,
-                    velocidade, backups e a saúde do seu ativo digital.
+                    Seu site é como um carro: sem revisão, ele para. Saiba como evitar hackers e lentidão no seu negócio.
                   </p>
                 </div>
               </div>
             </div>
           </div>
-          <!-- <div class="row">
-            <div class="col-12">
-              <ul class="pagination justify-content-center">
-                <li class="page-item disabled">
-                  <a class="page-link" href="#">Anterior</a>
-                </li>
-                <li class="page-item active">
-                  <a class="page-link" href="#">1</a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                  <a class="page-link" href="#">Próximo</a>
-                </li>
-              </ul>
+          
+          <!-- CTA Final para quem leu tudo -->
+          <div class="row mt-5">
+            <div class="col-12 text-center wow fadeInUp">
+                <div style="background: #152034; color: #fff; padding: 40px; border-radius: 10px;">
+                    <h3>Quer aplicar essas estratégias no seu negócio?</h3>
+                    <p>Não tente adivinhar o caminho. Fale com quem entende do mercado local.</p>
+                    <a href="contact.html" class="btn btn-light mt-3" style="color: #152034; font-weight: bold;">Agendar Consultoria Gratuita</a>
+                </div>
             </div>
-          </div> -->
+          </div>
+
         </div>
       </div>
       <!-- Blog End -->
@@ -403,27 +415,27 @@
               <div class="footer-social">
                 <a href="https://www.facebook.com/profile.php?id=61580259567105" target="_blank"><i class="fab fa-facebook-f"></i></a>
                 <a href="https://www.instagram.com/kisitedigital/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/company/kisite-cria%C3%A7%C3%A3o-de-sites-e-marketing/about/?viewAsMember=true" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.linkedin.com/company/kisite-cria%C3%A7%C3%A3o-de-sites-e-marketing/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
               </div>
             </div>
           </div>
           <div class="col-md-6 col-lg-3">
             <div class="footer-link">
               <h2>Nossos Serviços</h2>
-              <p>Sites Institucionais</p>
-              <p>Lojas Virtuais</p>
-              <p>Landing Pages</p>
-              <p>Otimização SEO</p>
-              <p>Manutenção e Suporte</p>
+              <p><a href="site-expresso.html">Sites Institucionais</a></p>
+              <p><a href="site-sob-medida.html">Lojas Virtuais</a></p>
+              <p><a href="index.html">Landing Pages</a></p>
+              <p><a href="index.html">Otimização SEO</a></p>
+              <p><a href="contact.html">Manutenção e Suporte</a></p>
             </div>
           </div>
           <div class="col-md-6 col-lg-3">
             <div class="footer-link">
               <h2>Páginas Úteis</h2>
               <a href="about.html">Sobre</a>
-              <a href="team.html">Portifólio</a>
-              <a href="portfolio.html">Preços</a>
-              <a href="service.html">Blog</a>
+              <a href="index.html#portifolio">Portifólio</a>
+              <a href="index.html#precos">Preços</a>
+              <a href="blog.html">Blog</a>
               <a href="contact.html">Contato</a>
             </div>
           </div>
@@ -459,6 +471,12 @@
     <!-- Footer End -->
 
       <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+      
+      <!-- WhatsApp Float -->
+      <a href="https://wa.me/5511919072390?text=Ol%C3%A1!%20Vi%20o%20blog%20da%20KiSite%20e%20gostaria%20de%20saber%20mais."
+      class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-whatsapp"></i>
+    </a>
     </div>
 
     <!-- JavaScript Libraries -->

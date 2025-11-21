@@ -2,16 +2,29 @@
 <html lang="pt-BR">
   <head>
     <meta charset="utf-8" />
-    <title>Site Sob Medida - Projetos Exclusivos para Empresas | KiSite</title>
+    <!-- 1. Título Premium e Localizado -->
+    <title>Site Sob Medida: Projetos Exclusivos para Empresas de Ferraz | KiSite</title>
+    
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    
+    <!-- 2. Keywords para público B2B e alto valor -->
+    <meta content="Desenvolvimento Web Ferraz, Site Personalizado SP, Sistemas Web Alto Tietê, E-commerce Dedicado, Agência Digital Premium" name="keywords" />
+    
+    <!-- 3. Descrição focada em crescimento e exclusividade -->
     <meta
-      content="Desenvolvimento de sites personalizados, site sob medida, e-commerce customizado, portais, SEO avançado"
-      name="keywords"
-    />
-    <meta
-      content="Criamos sites sob medida com design exclusivo, performance e integrações personalizadas. A solução definitiva para empresas que buscam resultados únicos."
+      content="Sua empresa cresceu e o básico não serve mais? Criamos sites e sistemas sob medida com design exclusivo e alta performance para líderes de mercado em Ferraz."
       name="description"
     />
+
+    <!-- 4. Canonical e Open Graph -->
+    <link rel="canonical" href="https://www.kisite.com.br/site-sob-medida.html" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Projetos Digitais de Alto Padrão em Ferraz de Vasconcelos" />
+    <meta property="og:description" content="Soluções web exclusivas para quem busca liderança de mercado." />
+    <meta property="og:url" content="https://www.kisite.com.br/site-sob-medida.html" />
+    <meta property="og:site_name" content="KiSite Agência Digital" />
+    <meta property="og:image" content="https://www.kisite.com.br/img/blog/blog-index1.jpg" />
 
     <!-- Favicon -->
     <link href="img/favicon.png" rel="icon" />
@@ -39,6 +52,32 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+
+    <!-- 5. SCHEMA DE SERVIÇO PROFISSIONAL -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Service",
+      "serviceType": "Desenvolvimento Web Personalizado",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "KiSite Agência Digital",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Rua Jorge Tibiriça",
+            "addressLocality": "Ferraz de Vasconcelos",
+            "addressRegion": "SP",
+            "postalCode": "08502-300",
+            "addressCountry": "BR"
+        },
+        "priceRange": "$$$"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Ferraz de Vasconcelos"
+      }
+    }
+    </script>
   </head>
 
   <body>
@@ -50,7 +89,7 @@
             <div class="col-lg-4 col-md-12">
               <div class="logo">
                 <a href="index.html">
-                  <img src="img/logo.png" alt="Logo KiSite" />
+                  <img src="img/logo.png" alt="KiSite Logo" />
                 </a>
               </div>
             </div>
@@ -74,7 +113,7 @@
                     </div>
                     <div class="top-bar-text">
                       <h3>Ligue para</h3>
-                      <p>+55 11 91907-2390</p>
+                      <p>+11 91907 2390</p>
                     </div>
                   </div>
                 </div>
@@ -115,23 +154,19 @@
               id="navbarCollapse"
             >
               <div class="navbar-nav mr-auto">
-                <a href="index.html" class="nav-item nav-link active">Início</a>
+                <a href="index.html" class="nav-item nav-link">Início</a>
                 <a href="about.html" class="nav-item nav-link">Sobre</a>
-                <a href="index#portifolio" class="nav-item nav-link">Portifólio</a>
+                <a href="index.html#portifolio" class="nav-item nav-link">Portifólio</a>
                 <div class="nav-item dropdown">
                   <a
                     href="#"
-                    class="nav-link dropdown-toggle"
+                    class="nav-link dropdown-toggle active"
                     data-toggle="dropdown"
                     >Páginas</a
                   >
                   <div class="dropdown-menu">
-                    <a href="site-expresso.html" class="dropdown-item"
-                      >Site Expresso</a
-                    >
-                    <a href="site-sob-medida.html" class="dropdown-item"
-                      >Site Sob Medida</a
-                    >
+                    <a href="site-expresso.html" class="dropdown-item">Site Expresso</a>
+                    <a href="site-sob-medida.html" class="dropdown-item active">Site Sob Medida</a>
                   </div>
                 </div>
                 <a href="index.html#precos" class="nav-item nav-link">Preços</a>
@@ -141,7 +176,7 @@
               <div class="ml-auto">
                 <a
                   class="btn"
-                  href="https://wa.me/5511919072390?text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
+                  href="https://wa.me/5511919072390?text=Ol%C3%A1%21%20Tenho%20interesse%20em%20um%20projeto%20sob%20medida."
                   target="_blank"
                   >Entre em Contato pelo WhatsApp</a
                 >
@@ -152,220 +187,101 @@
       </div>
       <!-- Nav Bar End -->
 
-      <!-- Seção Principal (Headline) -->
-      <div
-        class="page-header"
-        style="
-          padding: 120px 0;
-          margin-bottom: 0;
-          background: #152034;
-          color: #fff;
-        "
-      >
+      <!-- Hero Section -->
+      <div class="page-header" style="padding: 120px 0; background: #152034; color: #fff;">
         <div class="container">
           <div class="row">
             <div class="col-12 text-center">
-              <h1 class="display-3 font-weight-bold" style="color: #f2ce00">
-                Sua Visão, Nosso Código.
+              <h1 class="display-3 font-weight-bold" style="color: #f2ce00;">
+                Para Quem Não Aceita o Básico.
               </h1>
-              <p
-                class="lead mt-3"
-                style="
-                  font-size: 22px;
-                  color: #fff;
-                  max-width: 800px;
-                  margin: auto;
-                "
-              >
-                Para empresas que precisam de uma solução mais complexa. Criamos
-                projetos digitais exclusivos, com gestor dedicado e foco total
-                no seu sucesso.
+              <p class="lead mt-3" style="font-size: 22px; color: #fff; max-width: 800px; margin: 0 auto;">
+                Desenvolvimento web de alta performance para empresas de Ferraz que buscam liderança, exclusividade e integrações complexas.
               </p>
-              <a
-                href="https://wa.me/5511919072390?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20consultoria%20sobre%20o%20Site%20Sob%20Medida."
-                class="btn mt-4"
-                target="_blank"
-                style="
-                  background: #f2ce00;
-                  color: #152034;
-                  padding: 15px 40px;
-                  font-size: 18px;
-                "
-                >Agende uma Consultoria Gratuita</a
-              >
+              <br>
+              <a href="#contato" class="btn mt-4" style="background: #f2ce00; color: #152034; padding: 15px 40px; font-size: 18px; border: none;">
+                Solicitar Consultoria Executiva
+              </a>
             </div>
           </div>
         </div>
       </div>
-      <!-- Fim da Seção Principal -->
+      <!-- Hero End -->
 
-      <!-- Seção 'Processo Artesanal' -->
-      <div class="journey wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container">
-          <div class="section-header text-center mt-5">
-            <p>Nossa Parceria Estratégica</p>
-            <h2>Do Briefing ao Lançamento, um Processo Feito para Você</h2>
-          </div>
-          <div class="row text-center">
-            <div class="col-lg-3 col-md-6 mb-4">
-              <div
-                class="h-100 shadow-sm border-0 p-4"
-                style="background-color: #152034; color: #fff"
-              >
-                <div class="mb-3">
-                  <i class="fas fa-handshake fa-3x text-white"></i>
-                </div>
-                <h5 class="card-title">1. Imersão e Estratégia</h5>
-                <p class="card-text">
-                  Mergulhamos no seu negócio para entender seus desafios e
-                  definir os objetivos do projeto.
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-4">
-              <div
-                class="h-100 shadow-sm border-0 p-4"
-                style="background-color: #f2ce00; color: #152034"
-              >
-                <div class="mb-3">
-                  <i class="fas fa-drafting-compass fa-3x"></i>
-                </div>
-                <h5 class="card-title" style="color: #152034">
-                  2. Design Exclusivo
-                </h5>
-                <p class="card-text font-weight-normal">
-                  Criamos um layout 100% autêntico, focado na identidade da sua
-                  marca e na experiência do usuário.
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-4">
-              <div
-                class="h-100 shadow-sm border-0 p-4"
-                style="background-color: #152034; color: #fff"
-              >
-                <div class="mb-3">
-                  <i class="fas fa-code fa-3x text-white"></i>
-                </div>
-                <h5 class="card-title">3. Desenvolvimento Robusto</h5>
-                <p class="card-text">
-                  Codificamos uma solução performática, segura e pronta para
-                  escalar junto com o seu crescimento.
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-4">
-              <div
-                class="h-100 shadow-sm border-0 p-4"
-                style="background-color: #f2ce00; color: #152034"
-              >
-                <div class="mb-3">
-                  <i class="fas fa-check-circle fa-3x"></i>
-                </div>
-                <h5 class="card-title" style="color: #152034">
-                  4. Lançamento e Suporte
-                </h5>
-                <p class="card-text font-weight-normal">
-                  Publicamos seu site, oferecemos treinamento e garantimos o
-                  suporte que você precisa para decolar.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Fim 'Processo Artesanal' -->
-
-      <!-- Seção de Recursos Exclusivos -->
-      <div id="recursos" class="service" style="background-color: #f3f4f6">
+      <!-- Seção 'O Diferencial' -->
+      <div class="journey wow fadeInUp" data-wow-delay="0.1s" style="padding: 80px 0;">
         <div class="container">
           <div class="section-header text-center">
-            <p>Recursos Sob Medida</p>
-            <h2>Uma Solução Completa, Pensada em Detalhes</h2>
+            <p>Engenharia Digital</p>
+            <h2>Mais do que um Site, um Ativo da Empresa</h2>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+                <p style="font-size: 18px; line-height: 1.8; color: #555;">
+                    O <strong>Site Sob Medida</strong> não é baseado em templates. É um projeto de engenharia digital desenhado pixel a pixel para resolver os problemas específicos do seu negócio.
+                </p>
+                <p style="font-size: 18px; line-height: 1.8; color: #555;">
+                    Ideal para indústrias, grandes comércios, clínicas e prestadores de serviço do Alto Tietê que precisam de:
+                </p>
+                <ul style="list-style: none; padding: 0; margin-top: 20px;">
+                    <li style="margin-bottom: 15px;"><i class="fas fa-check-circle" style="color: #f2ce00; margin-right: 10px;"></i> <strong>Integração com Sistemas:</strong> Conecte seu site ao seu CRM, ERP ou sistema de estoque.</li>
+                    <li style="margin-bottom: 15px;"><i class="fas fa-check-circle" style="color: #f2ce00; margin-right: 10px;"></i> <strong>Áreas Restritas:</strong> Portais para clientes, fornecedores ou colaboradores.</li>
+                    <li style="margin-bottom: 15px;"><i class="fas fa-check-circle" style="color: #f2ce00; margin-right: 10px;"></i> <strong>Design Único:</strong> Fortaleça sua marca com uma identidade visual que ninguém mais tem.</li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <!-- Placeholder para imagem ilustrativa de código/design -->
+                <div style="background-color: #eee; height: 100%; min-height: 300px; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                    <i class="fas fa-layer-group fa-5x" style="color: #ccc;"></i>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Fim 'O Diferencial' -->
+
+      <!-- Seção de Recursos Técnicos -->
+      <div id="recursos" class="service" style="background-color: #f3f4f6; padding-top: 60px;">
+        <div class="container">
+          <div class="section-header text-center">
+            <p>Tecnologia de Ponta</p>
+            <h2>Construído para Escalar</h2>
           </div>
           <div class="row">
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
               <div class="service-item">
-                <div class="service-icon">
-                  <i class="fas fa-palette"></i>
-                </div>
-                <div class="service-text">
-                  <h3>Layout 100% Sob Medida</h3>
-                  <p>
-                    Um design que reflete a alma da sua marca, criado do zero
-                    para se destacar da concorrência.
-                  </p>
-                </div>
+                <div class="service-icon"><i class="fas fa-code"></i></div>
+                <div class="service-text"><h3>Código Limpo</h3><p>Desenvolvimento otimizado para velocidade extrema e segurança contra invasões.</p></div>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
               <div class="service-item">
-                <div class="service-icon">
-                  <i class="fas fa-cogs"></i>
-                </div>
-                <div class="service-text">
-                  <h3>Integrações Customizadas</h3>
-                  <p>
-                    Conectamos seu site a qualquer ferramenta que seu negócio
-                    precisa: CRMs, ERPs, sistemas de pagamento e mais.
-                  </p>
-                </div>
+                <div class="service-icon"><i class="fas fa-database"></i></div>
+                <div class="service-text"><h3>Dados Dinâmicos</h3><p>Sites que interagem com o usuário, calculadoras, filtros avançados e buscas inteligentes.</p></div>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
               <div class="service-item">
-                <div class="service-icon">
-                  <i class="fab fa-searchengin"></i>
-                </div>
-                <div class="service-text">
-                  <h3>Otimização SEO Avançada</h3>
-                  <p>
-                    Estrutura, conteúdo e performance alinhados para colocar seu
-                    site no topo das buscas do Google.
-                  </p>
-                </div>
+                <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                <div class="service-text"><h3>SEO Técnico Avançado</h3><p>Estrutura preparada para disputar as palavras-chave mais concorridas do seu nicho.</p></div>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
-              <div class="service-item">
-                <div class="service-icon">
-                  <i class="fas fa-user-tie"></i>
-                </div>
-                <div class="service-text">
-                  <h3>Gestor de Projeto Exclusivo</h3>
-                  <p>
-                    Um ponto de contato único e dedicado para garantir agilidade
-                    e alinhamento em todas as etapas.
-                  </p>
+                <div class="service-item">
+                  <div class="service-icon"><i class="fas fa-user-shield"></i></div>
+                  <div class="service-text"><h3>Segurança Corporativa</h3><p>Proteção contra ataques DDoS, SSL avançado e rotinas de backup automático.</p></div>
                 </div>
               </div>
-            </div>
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
               <div class="service-item">
-                <div class="service-icon">
-                  <i class="fas fa-edit"></i>
-                </div>
-                <div class="service-text">
-                  <h3>Treinamento e Autonomia</h3>
-                  <p>
-                    Ensinamos você a gerenciar o conteúdo do seu site de forma
-                    simples e independente.
-                  </p>
-                </div>
+                <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+                <div class="service-text"><h3>UX/UI Design</h3><p>Foco total na experiência do usuário para maximizar a taxa de conversão e vendas.</p></div>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
               <div class="service-item">
-                <div class="service-icon">
-                  <i class="fas fa-balance-scale"></i>
-                </div>
-                <div class="service-text">
-                  <h3>Conformidade com a LGPD</h3>
-                  <p>
-                    Seu site construído com as melhores práticas de segurança e
-                    privacidade de dados.
-                  </p>
-                </div>
+                <div class="service-icon"><i class="fas fa-project-diagram"></i></div>
+                <div class="service-text"><h3>Gestão de Projeto</h3><p>Você terá um gerente de contas dedicado para acompanhar cada etapa do desenvolvimento.</p></div>
               </div>
             </div>
           </div>
@@ -373,85 +289,47 @@
       </div>
       <!-- Fim Recursos -->
 
-      <!-- Seção Prova Social -->
-      <div class="testimonial wow fadeIn" data-wow-delay="0.1s">
+      <!-- Seção de Orçamento -->
+      <div id="contato" class="pricing-section">
         <div class="container">
           <div class="section-header text-center">
-            <p style="color: #fff">Confiança e Qualidade</p>
-            <h2 style="color: #fff">O Que Nossos Clientes Dizem</h2>
+            <p>Investimento Estratégico</p>
+            <h2>Vamos construir o futuro da sua empresa?</h2>
           </div>
-          <div class="row">
-            <div class="col-12">
-              <div class="testimonial-slider">
-                <div class="slider-item">
-                  <h3>Mário Fanucchi</h3>
-                  <h4>Dono de oficina mecânica</h4>
-                  <p>
-                    O site do meu escritório ficou muito melhor do que eu
-                    esperava. Agora tenho uma presença online que reflete a
-                    qualidade do meu trabalho.
-                  </p>
+          <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10 wow fadeInUp" data-wow-delay="0.2s">
+              <div class="pricing-card" style="transform: scale(1); border: 2px solid #f2ce00; padding: 40px;">
+                <div class="pricing-header">
+                  <h3>Projeto Sob Medida</h3>
+                  <p>Para empresas que sabem que o barato sai caro.</p>
                 </div>
-                <div class="slider-item">
-                  <h3>Andreia Miguel</h3>
-                  <h4>Empreendedora Independente</h4>
-                  <p>
-                    A equipe da KiSite entendeu exatamente o que eu precisava. O
-                    resultado foi um e-commerce lindo e funcional, que
-                    finalmente alavancou minhas vendas.
-                  </p>
+                <div class="pricing-price">
+                  <h2 style="color: #fff; font-size: 32px;">Sob Orçamento</h2>
+                  <span style="color: #e0e0e0; text-shadow: none; font-size: 16px;">Análise personalizada do escopo e necessidades</span>
                 </div>
-                <div class="slider-item">
-                  <h3>João da Silva</h3>
-                  <h4>Advogado</h4>
-                  <p>
-                    O processo foi transparente e o gestor de projetos foi
-                    incrível. Tive o suporte necessário do início ao fim.
-                    Recomendo fortemente!
-                  </p>
+                <div class="pricing-features">
+                    <p style="text-align: center; margin-bottom: 20px;">O processo inclui:</p>
+                  <ul style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                    <li><i class="fas fa-check text-success"></i>Briefing & Planejamento</li>
+                    <li><i class="fas fa-check text-success"></i>Wireframing & Prototipagem</li>
+                    <li><i class="fas fa-check text-success"></i>Design Exclusivo</li>
+                    <li><i class="fas fa-check text-success"></i>Desenvolvimento Front/Back-end</li>
+                    <li><i class="fas fa-check text-success"></i>Integrações de API</li>
+                    <li><i class="fas fa-check text-success"></i>Testes de Carga e Segurança</li>
+                    <li><i class="fas fa-check text-success"></i>Treinamento da Equipe</li>
+                    <li><i class="fas fa-check text-success"></i>Garantia de 3 Meses</li>
+                  </ul>
+                </div>
+                <div class="pricing-footer">
+                  <a href="https://wa.me/5511919072390?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20reuni%C3%A3o%20sobre%20um%20projeto%20Sob%20Medida." class="btn fale_conosto" style="margin-bottom: 0; color: #152034; font-weight: bold; background-color: #f2ce00; padding: 15px 30px;">Agendar Reunião com Especialista</a>
+                  <p style="color: #ccc; font-size: 14px; margin-top: 15px;">Atendemos presencialmente em Ferraz e região ou via videoconferência.</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- Fim Prova Social -->
-
-      <!-- Seção CTA Final -->
-      <div
-        id="contato"
-        class="footer wow fadeIn"
-        data-wow-delay="0.3s"
-        style="margin-top: 0; padding-top: 60px; padding-bottom: 60px"
-      >
-        <div class="container">
-          <div class="row">
-            <div class="col-12 text-center">
-              <div class="footer-contact">
-                <h2>Pronto para Construir um Projeto Único?</h2>
-                <p style="max-width: 700px; margin: auto; color: #fff">
-                  Vamos conversar sobre suas ideias. Agende uma consultoria
-                  gratuita e sem compromisso para receber um diagnóstico e um
-                  orçamento personalizado para o seu negócio.
-                </p>
-                <a
-                  class="btn mt-4"
-                  href="https://wa.me/5511919072390?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20consultoria%20sobre%20o%20Site%20Sob%20Medida."
-                  target="_blank"
-                  style="
-                    background: #f2ce00;
-                    color: #152034;
-                    padding: 15px 40px;
-                    font-size: 18px;
-                    border: none;
-                  "
-                  >Solicitar Orçamento Personalizado</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <!-- Fim Orçamento -->
 
     <!-- Footer Start -->
     <div class="footer wow fadeIn" data-wow-delay="0.3s">
@@ -477,20 +355,20 @@
           <div class="col-md-6 col-lg-3">
             <div class="footer-link">
               <h2>Nossos Serviços</h2>
-              <p>Sites Institucionais</p>
-              <p>Lojas Virtuais</p>
-              <p>Landing Pages</p>
-              <p>Otimização SEO</p>
-              <p>Manutenção e Suporte</p>
+              <p><a href="site-expresso.html">Sites Institucionais</a></p>
+              <p><a href="site-sob-medida.html">Lojas Virtuais</a></p>
+              <p><a href="index.html">Landing Pages</a></p>
+              <p><a href="index.html">Otimização SEO</a></p>
+              <p><a href="contact.html">Manutenção e Suporte</a></p>
             </div>
           </div>
           <div class="col-md-6 col-lg-3">
             <div class="footer-link">
               <h2>Páginas Úteis</h2>
               <a href="about.html">Sobre</a>
-              <a href="team.html">Portifólio</a>
-              <a href="portfolio.html">Preços</a>
-              <a href="service.html">Blog</a>
+              <a href="index.html#portifolio">Portifólio</a>
+              <a href="index.html#precos">Preços</a>
+              <a href="blog.html">Blog</a>
               <a href="contact.html">Contato</a>
             </div>
           </div>
@@ -525,25 +403,20 @@
     </div>
     <!-- Footer End -->
 
-            <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-
-       <!-- NOVO: Botão Flutuante do WhatsApp -->
-      <a
-        href="https://wa.me/5511919072390?text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os."
-        class="whatsapp-float"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <i class="fab fa-whatsapp"></i>
-      </a>
-    </div>
+      <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+      
+      <!-- WhatsApp Float -->
+      <a href="https://wa.me/5511919072390?text=Ol%C3%A1!%20Tenho%20interesse%20em%20um%20projeto%20Sob%20Medida."
+      class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-whatsapp"></i>
+    </a>
     </div>
 
     <!-- JavaScript Libraries -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/isotope/isotope.pkgd.min.js"></script>

@@ -2,10 +2,26 @@
 <html lang="pt-BR">
   <head>
     <meta charset="utf-8" />
-    <title>Site Expresso - Seu Site Profissional em Tempo Recorde | KiSite</title>
+    <!-- 1. Título com Promessa Forte e Localização -->
+    <title>Site Expresso: Seu Site Pronto em 7 Dias em Ferraz | KiSite</title>
+    
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="Site rápido, site acessível, site para pequenas empresas, presença online profissional" name="keywords" />
-    <meta content="Conheça o Site Expresso: a solução ideal para ter um site profissional no ar em poucos dias, com design moderno e suporte contínuo." name="description" />
+    
+    <!-- 2. Keywords de Fundo de Funil (Quem quer comprar) -->
+    <meta content="Comprar site barato Ferraz, Site rápido Alto Tietê, Web Designer Preço, Site para comércios locais" name="keywords" />
+    
+    <!-- 3. Descrição focada em Venda -->
+    <meta content="Precisa de um site urgente para sua empresa em Ferraz? O Site Expresso é a solução profissional, rápida e com o melhor preço da região. Confira!" name="description" />
+
+    <!-- 4. Canonical e Open Graph -->
+    <link rel="canonical" href="https://www.kisite.com.br/site-expresso.html" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Site Profissional por R$ 690? Conheça o Site Expresso." />
+    <meta property="og:description" content="A solução ideal para pequenas empresas de Ferraz de Vasconcelos." />
+    <meta property="og:url" content="https://www.kisite.com.br/site-expresso.html" />
+    <meta property="og:site_name" content="KiSite Agência Digital" />
+    <meta property="og:image" content="https://www.kisite.com.br/img/blog/blog-index1.jpg" />
 
     <!-- Favicon -->
     <link href="img/favicon.png" rel="icon" />
@@ -33,11 +49,51 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+
+    <!-- 5. SCHEMA DE SERVIÇO (Para aparecer preço no Google) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Service",
+      "serviceType": "Criação de Sites Rápidos",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "KiSite Agência Digital",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Rua Jorge Tibiriça",
+            "addressLocality": "Ferraz de Vasconcelos",
+            "addressRegion": "SP",
+            "postalCode": "08502-300",
+            "addressCountry": "BR"
+        },
+        "priceRange": "R$ 690"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Ferraz de Vasconcelos"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Planos de Site",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Site Expresso Setup"
+            },
+            "price": "690.00",
+            "priceCurrency": "BRL"
+          }
+        ]
+      }
+    }
+    </script>
   </head>
 
   <body>
     <div class="wrapper">
-      <!-- Top Bar e Nav Bar (Mantendo a consistência do projeto) -->
       <!-- Top Bar Start -->
       <div class="top-bar">
         <div class="container-fluid">
@@ -45,7 +101,7 @@
             <div class="col-lg-4 col-md-12">
               <div class="logo">
                 <a href="index.html">
-                  <img src="img/logo.png" alt="Logo KiSite" />
+                  <img src="img/logo.png" alt="KiSite Logo" />
                 </a>
               </div>
             </div>
@@ -69,7 +125,7 @@
                     </div>
                     <div class="top-bar-text">
                       <h3>Ligue para</h3>
-                      <p>+55 11 91907-2390</p>
+                      <p>+11 91907 2390</p>
                     </div>
                   </div>
                 </div>
@@ -110,18 +166,18 @@
               id="navbarCollapse"
             >
               <div class="navbar-nav mr-auto">
-                <a href="index.html" class="nav-item nav-link active">Início</a>
+                <a href="index.html" class="nav-item nav-link">Início</a>
                 <a href="about.html" class="nav-item nav-link">Sobre</a>
-                <a href="../index.html#portifolio" class="nav-item nav-link">Portifólio</a>
+                <a href="index.html#portifolio" class="nav-item nav-link">Portifólio</a>
                 <div class="nav-item dropdown">
                   <a
                     href="#"
-                    class="nav-link dropdown-toggle"
+                    class="nav-link dropdown-toggle active"
                     data-toggle="dropdown"
                     >Páginas</a
                   >
                   <div class="dropdown-menu">
-                    <a href="site-expresso.html" class="dropdown-item">Site Expresso</a>
+                    <a href="site-expresso.html" class="dropdown-item active">Site Expresso</a>
                     <a href="site-sob-medida.html" class="dropdown-item">Site Sob Medida</a>
                   </div>
                 </div>
@@ -132,7 +188,7 @@
               <div class="ml-auto">
                 <a
                   class="btn"
-                  href="https://wa.me/5511919072390?text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
+                  href="https://wa.me/5511919072390?text=Ol%C3%A1%21%20Quero%20saber%20mais%20sobre%20o%20Site%20Expresso."
                   target="_blank"
                   >Entre em Contato pelo WhatsApp</a
                 >
@@ -143,47 +199,54 @@
       </div>
       <!-- Nav Bar End -->
 
-      <!-- Seção Principal (Headline) -->
-      <div class="page-header" style="padding: 120px 0;">
+      <!-- Hero Section -->
+      <div class="page-header" style="padding: 120px 0; background-image: url('img/hero-bg-service.jpg'); background-size: cover; background-position: center;">
         <div class="container">
           <div class="row">
             <div class="col-12 text-center">
-              <h1 class="display-3 font-weight-bold" style="color: #152034;">Seu Site Profissional no Ar rápido.</h1>
-              <p class="lead mt-3" style="font-size: 22px; color: #152034;">A solução rápida, acessível e sem complicação que seu negócio precisa para marcar presença online e atrair mais clientes.</p>
-              <a href="#precos" class="btn mt-4" style="background: #152034; color: #f2ce00; padding: 15px 40px; font-size: 18px;">Ver Plano e Preço</a>
+              <h1 class="display-3 font-weight-bold" style="color: #152034; text-shadow: 2px 2px 4px rgba(255,255,255,0.8);">
+                Seu Site Profissional no Ar em 7 Dias.
+              </h1>
+              <p class="lead mt-3" style="font-size: 22px; color: #152034; font-weight: 500; background: rgba(255,255,255,0.7); display: inline-block; padding: 5px 15px; border-radius: 5px;">
+                Ideal para negócios de Ferraz de Vasconcelos que não podem perder tempo (nem dinheiro).
+              </p>
+              <br>
+              <a href="#precos" class="btn mt-4" style="background: #152034; color: #f2ce00; padding: 15px 40px; font-size: 18px; border: 2px solid #f2ce00;">
+                Ver Plano e Preço
+              </a>
             </div>
           </div>
         </div>
       </div>
-      <!-- Fim da Seção Principal -->
+      <!-- Hero End -->
 
       <!-- Seção 'Como Funciona' -->
       <div class="journey wow fadeInUp" data-wow-delay="0.1s" style="padding: 60px 0;">
         <div class="container">
           <div class="section-header text-center">
-            <p>Nosso Processo</p>
-            <h2>Lançar seu site nunca foi tão fácil</h2>
+            <p>Simples e Rápido</p>
+            <h2>Chega de Complicar: 3 Passos e Pronto</h2>
           </div>
           <div class="row text-center">
             <div class="col-lg-4 col-md-6 mb-4">
-              <div class="h-100 shadow-sm border-0" style="background-color: #152034; color: #fff; padding: 20px;">
-                <div class="mb-3"><i class="fas fa-file-signature fa-3x text-white"></i></div>
-                <h5 class="card-title">1. Escolha e Contrate</h5>
-                <p class="card-text">Você contrata o plano Site Expresso e nossa equipe entra em contato para dar as boas-vindas e iniciar o projeto.</p>
+              <div class="h-100 shadow-sm border-0" style="background-color: #152034; color: #fff; padding: 20px; border-radius: 10px;">
+                <div class="mb-3"><i class="fas fa-check-circle fa-3x text-white"></i></div>
+                <h5 class="card-title">1. Você Escolhe o Plano</h5>
+                <p class="card-text">Contrate o Site Expresso aqui mesmo. É a opção mais ágil e econômica para empresas da região.</p>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-4">
-              <div class="h-100 shadow-sm border-0 text-black" style="background-color: #f2ce00; padding: 20px;">
-                <div class="mb-3"><i class="fas fa-paper-plane fa-3x" style="color: #152034;"></i></div>
-                <h5 class="card-title" style="color: #152034;">2. Envie seu Conteúdo</h5>
-                <p class="card-text font-weight-normal">Você nos envia suas informações: logo, textos e imagens. Nós cuidamos de toda a parte técnica e de design para você.</p>
+              <div class="h-100 shadow-sm border-0 text-black" style="background-color: #f2ce00; padding: 20px; border-radius: 10px;">
+                <div class="mb-3"><i class="fas fa-laptop-code fa-3x" style="color: #152034;"></i></div>
+                <h5 class="card-title" style="color: #152034;">2. Nós Criamos Tudo</h5>
+                <p class="card-text font-weight-normal">Você manda seu logo e fotos (pelo WhatsApp mesmo). Nós cuidamos do design, configuração e textos.</p>
               </div>
             </div>
             <div class="col-lg-4 col-md-12 mb-4">
-              <div class="h-100 shadow-sm border-0" style="background-color: #152034; color: #fff; padding: 20px;">
+              <div class="h-100 shadow-sm border-0" style="background-color: #152034; color: #fff; padding: 20px; border-radius: 10px;">
                 <div class="mb-3"><i class="fas fa-rocket fa-3x text-white"></i></div>
-                <h5 class="card-title">3. Site no Ar!</h5>
-                <p class="card-text">Em até 7 dias úteis, seu site profissional está online, pronto para impressionar seus clientes e gerar resultados.</p>
+                <h5 class="card-title">3. Site no Ar e Clientes Chegando</h5>
+                <p class="card-text">Em até 7 dias, seu site está online, otimizado para o Google e pronto para receber visitas de Ferraz e região.</p>
               </div>
             </div>
           </div>
@@ -195,44 +258,44 @@
       <div id="beneficios" class="service" style="background-color: #f3f4f6; padding-top: 60px;">
         <div class="container">
           <div class="section-header text-center">
-            <p>Vantagens Exclusivas</p>
-            <h2>Tudo o que seu negócio precisa para decolar</h2>
+            <p>Por que Escolher o Site Expresso?</p>
+            <h2>A Solução Perfeita para Pequenos Negócios Locais</h2>
           </div>
           <div class="row">
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
               <div class="service-item">
                 <div class="service-icon"><i class="fas fa-bolt"></i></div>
-                <div class="service-text"><h3>Presença Online Rápida</h3><p>Não perca mais tempo. Tenha seu site no ar em poucos dias e comece a ser encontrado por seus clientes imediatamente.</p></div>
+                <div class="service-text"><h3>Velocidade Real</h3><p>Não espere meses. Seus concorrentes estão vendendo agora. Esteja online na próxima semana.</p></div>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
               <div class="service-item">
-                <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
-                <div class="service-text"><h3>Design Moderno e Profissional</h3><p>Seu site será construído a partir de um layout validado, garantindo uma aparência moderna que transmite confiança.</p></div>
+                <div class="service-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <div class="service-text"><h3>Foco Local</h3><p>Estrutura preparada para você ser encontrado por clientes de Ferraz, Suzano e Poá.</p></div>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
               <div class="service-item">
-                <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
-                <div class="service-text"><h3>Credibilidade e Confiança</h3><p>Um site profissional aumenta a percepção de valor do seu negócio e gera mais confiança no seu público.</p></div>
+                <div class="service-icon"><i class="fab fa-whatsapp"></i></div>
+                <div class="service-text"><h3>Botão de WhatsApp</h3><p>Facilite o contato. Seus clientes clicam e falam direto com você. Sem formulários chatos.</p></div>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
                 <div class="service-item">
                   <div class="service-icon"><i class="fab fa-google"></i></div>
-                  <div class="service-text"><h3>Otimizado para o Google</h3><p>Estrutura amigável aos buscadores (SEO) para ajudar seus clientes a encontrarem sua empresa com mais facilidade.</p></div>
+                  <div class="service-text"><h3>Amigo do Google</h3><p>Desenvolvido com as melhores práticas de SEO para ajudar você a subir no ranking.</p></div>
                 </div>
               </div>
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
               <div class="service-item">
                 <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
-                <div class="service-text"><h3>Perfeito em Qualquer Tela</h3><p>Seu site será 100% responsivo, funcionando perfeitamente em celulares, tablets e computadores.</p></div>
+                <div class="service-text"><h3>100% Mobile</h3><p>Seu site ficará lindo em qualquer celular. Essencial, já que todo mundo busca pelo telefone hoje.</p></div>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
               <div class="service-item">
                 <div class="service-icon"><i class="fas fa-headset"></i></div>
-                <div class="service-text"><h3>Suporte Contínuo</h3><p>Foque no seu negócio e deixe a parte técnica conosco. Oferecemos suporte para o que você precisar.</p></div>
+                <div class="service-text"><h3>Suporte Humanizado</h3><p>Nada de robôs. Fale com gente de verdade que entende seu negócio e quer te ver crescer.</p></div>
               </div>
             </div>
           </div>
@@ -244,35 +307,40 @@
       <div id="precos" class="pricing-section">
         <div class="container">
           <div class="section-header text-center">
-            <p>Investimento Inteligente</p>
-            <h2>Um plano claro e sem surpresas</h2>
+            <p>Investimento Transparente</p>
+            <h2>Qualidade de Agência, Preço de Parceiro</h2>
           </div>
           <div class="row justify-content-center">
             <div class="col-lg-6 col-md-8 wow fadeInUp" data-wow-delay="0.2s">
-              <div class="pricing-card popular" style="transform: scale(1);">
+              <div class="pricing-card popular" style="transform: scale(1); border: 2px solid #f2ce00;">
                 <div class="pricing-header">
-                  <h3>Site Expresso</h3>
-                  <p>A solução completa para sua presença online, com tudo incluso para você não se preocupar com nada.</p>
+                  <h3>Plano Site Expresso</h3>
+                  <p>O pacote completo para quem quer começar certo na internet.</p>
                 </div>
                 <div class="pricing-price">
                   <h2 style="color: #fff;"><sup>R$</sup>690</h2>
-                  <span style="color: #fff; text-shadow: none;">Pagamento único de setup</span>
-                  <h2 class="mt-3" style="color: #fff;"><sup>R$</sup>99<small>/mês</small></h2>
-                  <span style="color: #fff; text-shadow: none;">Hospedagem, Suporte e Manutenção</span>
+                  <span style="color: #e0e0e0; text-shadow: none; font-size: 14px;">Taxa única de criação (Setup)</span>
+                  
+                  <div style="margin: 20px 0; border-top: 1px solid rgba(255,255,255,0.2);"></div>
+                  
+                  <h2 class="mt-3" style="color: #f2ce00;"><sup>R$</sup>99<small>/mês</small></h2>
+                  <span style="color: #e0e0e0; text-shadow: none; font-size: 14px;">Hospedagem de Alta Performance + Suporte Técnico + Manutenção</span>
                 </div>
                 <div class="pricing-features">
                   <ul>
-                    <li><i class="fas fa-check"></i>Site responsivo (até 5 páginas)</li>
-                    <li><i class="fas fa-check"></i>Design baseado em modelo validado</li>
-                    <li><i class="fas fa-check"></i>Domínio Grátis (1º ano)</li>
-                    <li><i class="fas fa-check"></i>Certificado de Segurança SSL</li>
-                    <li><i class="fas fa-check"></i>Até 3 contas de e-mail profissional</li>
-                    <li><i class="fas fa-check"></i>Integração com WhatsApp e Redes Sociais</li>
-                    <li><i class="fas fa-check"></i>Suporte técnico via WhatsApp e E-mail</li>
+                    <li><i class="fas fa-check text-success"></i>Site Profissional Responsivo (Até 5 Pág.)</li>
+                    <li><i class="fas fa-check text-success"></i><strong>Domínio Grátis</strong> (1º ano)</li>
+                    <li><i class="fas fa-check text-success"></i>Hospedagem Rápida Inclusa</li>
+                    <li><i class="fas fa-check text-success"></i>Certificado SSL (Cadeado de Segurança)</li>
+                    <li><i class="fas fa-check text-success"></i>3 E-mails Profissionais (@suaempresa)</li>
+                    <li><i class="fas fa-check text-success"></i>Botão Flutuante do WhatsApp</li>
+                    <li><i class="fas fa-check text-success"></i>Otimização Básica para Google (SEO)</li>
+                    <li><i class="fas fa-check text-success"></i><strong>Suporte VIP</strong> via WhatsApp</li>
                   </ul>
                 </div>
                 <div class="pricing-footer">
-                  <a href="https://wa.me/5511919072390?text=Ol%C3%A1%21%20Quero%20contratar%20o%20Site%20Expresso." class="btn fale_conosto" style="margin-bottom: 0; color: #334366;">Solicite seu Site Agora</a>
+                  <a href="https://wa.me/5511919072390?text=Ol%C3%A1%21%20Quero%20contratar%20o%20Site%20Expresso%20e%20colocar%20minha%20empresa%20na%20internet." class="btn fale_conosto" style="margin-bottom: 0; color: #152034; font-weight: bold; background-color: #f2ce00;">Quero Contratar Agora</a>
+                  <p style="color: #ccc; font-size: 12px; margin-top: 10px;">Sem fidelidade. Cancele quando quiser.</p>
                 </div>
               </div>
             </div>
@@ -285,16 +353,16 @@
       <div class="testimonial wow fadeIn" data-wow-delay="0.1s">
         <div class="container">
             <div class="section-header text-center">
-                <p style="color: #fff;">Confiança e Qualidade</p>
-                <h2 style="color: #fff;">Mais de 50 Clientes Satisfeitos</h2>
+                <p style="color: #fff;">Quem confia na KiSite</p>
+                <h2 style="color: #fff;">Empresários como você que já estão lucrando online</h2>
             </div>
           <div class="row">
             <div class="col-12">
               <div class="testimonial-slider-nav">
-                <div class="slider-nav"><img src="img/testimonial-1.jpg" alt="Depoimento Cliente 1" /></div>
-                <div class="slider-nav"><img src="img/testimonial-2.jpg" alt="Depoimento Cliente 2" /></div>
-                <div class="slider-nav"><img src="img/testimonial-3.jpg" alt="Depoimento Cliente 3" /></div>
-                <div class="slider-nav"><img src="img/testimonial-4.jpg" alt="Depoimento Cliente 4" /></div>
+                <div class="slider-nav"><img src="img/testimonial-1.jpg" alt="Foto Cliente 1" /></div>
+                <div class="slider-nav"><img src="img/testimonial-2.jpg" alt="Foto Cliente 2" /></div>
+                <div class="slider-nav"><img src="img/testimonial-3.jpg" alt="Foto Cliente 3" /></div>
+                <div class="slider-nav"><img src="img/testimonial-4.jpg" alt="Foto Cliente 4" /></div>
               </div>
             </div>
           </div>
@@ -303,25 +371,31 @@
               <div class="testimonial-slider">
                 <div class="slider-item">
                   <h3>Mário Fanucchi</h3>
-                  <h4>Dono de oficina mecânica</h4>
-                  <p>O processo foi muito mais rápido do que imaginei. Em poucos dias, o site da minha oficina estava no ar, com uma aparência super profissional!</p>
+                  <h4>Oficina Mecânica em Ferraz</h4>
+                  <p>"Eu precisava de algo rápido. Em 5 dias meu site estava no ar e meus clientes já elogiaram. O suporte do pessoal da KiSite é nota 10."</p>
                 </div>
                 <div class="slider-item">
                   <h3>Andreia Miguel</h3>
-                  <h4>Empreendedora Independente</h4>
-                  <p>Contratar o Site Expresso foi a melhor decisão. O site da minha doceria ficou lindo e finalmente comecei a receber pedidos pelo WhatsApp.</p>
+                  <h4>Confeitaria Artesanal</h4>
+                  <p>"Vender só pelo Insta estava difícil. Com o site expresso, ficou profissional. Agora tenho meu cardápio online e recebo pedidos organizados."</p>
                 </div>
                 <div class="slider-item">
                   <h3>João da Silva</h3>
                   <h4>Advogado</h4>
-                  <p>Precisava de uma presença online séria e profissional, mas não podia esperar meses. A KiSite entregou exatamente isso. Recomendo!</p>
+                  <p>"Custo-benefício imbatível. Pesquisei em várias agências de SP e cobravam o triplo. A KiSite entregou qualidade com preço justo."</p>
                 </div>
+                <div class="slider-item">
+                    <h3>Marcos Melo</h3>
+                    <h4>Loja NinjaPrint</h4>
+                    <p>"A integração com a Nuvemshop e o design que eles fizeram mudou minha loja. Recomendo para qualquer lojista da região."</p>
+                  </div>
               </div>
             </div>
           </div>
         </div>
       </div>
       <!-- Fim Prova Social -->
+
     <!-- Footer Start -->
     <div class="footer wow fadeIn" data-wow-delay="0.3s">
       <div class="container">
@@ -346,20 +420,20 @@
           <div class="col-md-6 col-lg-3">
             <div class="footer-link">
               <h2>Nossos Serviços</h2>
-              <p>Sites Institucionais</p>
-              <p>Lojas Virtuais</p>
-              <p>Landing Pages</p>
-              <p>Otimização SEO</p>
-              <p>Manutenção e Suporte</p>
+              <p><a href="site-expresso.html">Sites Institucionais</a></p>
+              <p><a href="site-sob-medida.html">Lojas Virtuais</a></p>
+              <p><a href="index.html">Landing Pages</a></p>
+              <p><a href="index.html">Otimização SEO</a></p>
+              <p><a href="contact.html">Manutenção e Suporte</a></p>
             </div>
           </div>
           <div class="col-md-6 col-lg-3">
             <div class="footer-link">
               <h2>Páginas Úteis</h2>
               <a href="about.html">Sobre</a>
-              <a href="team.html">Portifólio</a>
-              <a href="portfolio.html">Preços</a>
-              <a href="service.html">Blog</a>
+              <a href="index.html#portifolio">Portifólio</a>
+              <a href="index.html#precos">Preços</a>
+              <a href="blog.html">Blog</a>
               <a href="contact.html">Contato</a>
             </div>
           </div>
@@ -367,8 +441,7 @@
             <div class="newsletter">
               <h2>Newsletter</h2>
               <p>
-                Cadastre-se para receber nossas novidades e ofertas exclusivas
-                diretamente no seu e-mail.
+                Receba ofertas exclusivas para sites e marketing.
               </p>
               <div class="form">
                 <input class="form-control" placeholder="Seu e-mail" />
@@ -394,25 +467,20 @@
     </div>
     <!-- Footer End -->
 
-            <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+      <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
-       <!-- NOVO: Botão Flutuante do WhatsApp -->
-      <a
-        href="https://wa.me/5511919072390?text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os."
-        class="whatsapp-float"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <i class="fab fa-whatsapp"></i>
-      </a>
-    </div>
+      <!-- WhatsApp Float -->
+      <a href="https://wa.me/5511919072390?text=Ol%C3%A1!%20Estou%20interessado%20no%20Site%20Expresso."
+      class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-whatsapp"></i>
+    </a>
     </div>
 
     <!-- JavaScript Libraries -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
